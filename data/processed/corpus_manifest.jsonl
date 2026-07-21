@@ -1,0 +1,5016 @@
+{
+  "random_seed": 42,
+  "start_date": "2022-01-01T00:00:00+00:00",
+  "cutoff_date": "2026-07-21T23:59:59+00:00",
+  "samples_per_year": 50,
+  "years": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "total_documents": 1000,
+  "selected_documents": [
+    {
+      "document_id": "GHSA-27mh-3343-6hg5",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-28q9-9c3g-v3f9",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-2927-hv3p-f3vp",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-2cjc-rgmp-x649",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-3633-5h82-39pq",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-4gjr-vgfx-9qvw",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-5mh6-p63g-3mv5",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-69cg-p879-7622",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-6rw3-3whw-jvjj",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-6whj-8g9g-5jvx",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-742w-89gc-8m9c",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-7v3g-4878-5qrf",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-8v99-48m9-c8pm",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-8wrg-m8vm-5fvj",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-93m7-c69f-5cfj",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-95f9-94vc-665h",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-99g5-5643-xphp",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-9c9w-9pq7-f35h",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-9cwv-cppx-mqjm",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-ccmg-w4xm-p28v",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-chxf-fjcf-7fwp",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-fcm2-6c3h-pg6j",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-fcwg-45jh-5qhf",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-g7p7-x6w7-w6qg",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-gp6j-vx54-5pmf",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-gwmc-6795-qghj",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-jf8p-3vjh-pq94",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-jmrx-5g74-6v2f",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-jpf8-h7h7-3ppm",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-m3q4-7qmj-657m",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-mvpr-q6rh-8vrp",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-pmcr-2rhp-36hr",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-q6h7-4qgw-2j9p",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-qvx2-59g8-8hph",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-r48h-jr2j-9g78",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-r9cr-hvjj-496v",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-w57v-6xp4-rm2v",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GO-2021-0178",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GO-2022-0187",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GO-2022-0201",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GO-2022-0274",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GO-2022-0294",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GO-2022-0463",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GO-2022-0477",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GO-2022-0528",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GO-2022-0569",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GO-2022-0586",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GO-2022-0963",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GO-2022-1038",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GO-2022-1040",
+      "ecosystem": "Go",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-23px-mw2p-46qm",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-33hq-f2mf-jm3c",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-5r5m-65gx-7vrh",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-63cv-4pc2-4fcf",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-6xjj-v76v-fwpj",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-7g2v-2frm-rg94",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-85jj-c9jr-9jhx",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-8c69-r38j-rpfj",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-8qxh-2gh8-r923",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-9f95-hhg4-pg4f",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-9m3v-v4r5-ppx7",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-c57c-7hrj-6q6v",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-ch7v-37xg-75ph",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-h2ph-9r76-37v5",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-hf7j-xj3w-87g4",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-hj4r-2c9c-29h3",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-hmq4-c2r4-5q8h",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-hwc3-3qh6-r4gg",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-j494-7x2v-vvvp",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-jqvr-j2vg-gjrv",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-jxgp-jgh3-8jc8",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-mpv3-g8m3-3fjc",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-p267-jjfq-pphf",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-pj4x-2xr5-w87m",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-pv7q-v9mv-9mh5",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-qgc7-mgm3-q253",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-rwcp-qrwg-56cg",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-v683-rcxx-vpff",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-w23q-4hw3-2pp6",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-w55j-f7vx-6q37",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-wj6x-hcc2-f32j",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-x5rv-w9pm-8qp8",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GO-2023-1505",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GO-2023-1515",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GO-2023-1549",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GO-2023-1571",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GO-2023-1595",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GO-2023-1732",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GO-2023-1772",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GO-2023-1832",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GO-2023-1923",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GO-2023-1930",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GO-2023-1990",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GO-2023-2048",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GO-2023-2074",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GO-2023-2115",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GO-2023-2158",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GO-2023-2163",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GO-2023-2333",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GO-2023-2379",
+      "ecosystem": "Go",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-26w3-q4j8-4xjp",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-4j93-fm92-rp4m",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-5mqx-rpxv-mvxj",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-5qww-56gc-f66c",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-6m9h-2pr2-9j8f",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-6mvp-gh77-7vwh",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-88jx-383q-w4qc",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-8wcc-m6j2-qxvm",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-c5rv-hjjc-jv7m",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-hfrg-4jwr-jfpj",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-pvxj-25m6-7vqr",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-qc6v-5g5m-8cw2",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-qr2h-7pwm-h393",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-rpcc-p8xm-rc6p",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-vw7q-p2qg-4m5f",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-wx43-g55g-2jf4",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2022-0354",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2022-0368",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2022-0392",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2022-0473",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2022-0512",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2022-0595",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2022-0640",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2022-0840",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2022-0869",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2022-0921",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2022-0925",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2022-0989",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2023-1461",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2023-1657",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2023-1887",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2023-2006",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2023-2070",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2023-2109",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2024-2481",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2024-2560",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2024-2775",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2024-2825",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2024-2875",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2024-2916",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2024-2939",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2024-3010",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2024-3129",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2024-3131",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2024-3190",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2024-3265",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2024-3288",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2024-3302",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2024-3326",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GO-2024-3331",
+      "ecosystem": "Go",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-2464-8j7c-4cjm",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-274q-79q9-52j7",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-2v2w-8v8c-wcm9",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-33pr-m977-5w97",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-38pp-6gcp-rqvm",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-4276-cm8c-788h",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-56j4-446m-qrf6",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-56wx-66px-9j66",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-7cr3-38jm-6p45",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-89vc-vf32-ch59",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-9h6j-4ffx-cm84",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-9r4c-jwx3-3j76",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-c8g6-qrwh-m3vp",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-cwwm-hr97-qfxm",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-g9f5-x53j-h563",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-h34r-jxqm-qgpr",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-hmp7-x699-cvhq",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-jjjj-jwhf-8rgr",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-mcvp-rpgg-9273",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-q97m-8853-pq76",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-qj47-w9f2-qg44",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-vj7w-3m8c-6vpx",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-xh32-cx6c-cp4v",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-3384",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-3401",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-3415",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-3481",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-3512",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-3587",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-3618",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-3627",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-3631",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-3702",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-3801",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-3802",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-3832",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-3834",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-3842",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-3863",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-3903",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-3911",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-3961",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-3992",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-4008",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-4011",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-4086",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-4154",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-4177",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-4181",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GO-2025-4261",
+      "ecosystem": "Go",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-2ccx-cjjh-r2j8",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-2jcc-mxv7-p3f9",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-3fxj-6jh8-hvhx",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-3mw5-466q-295q",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-3r8v-2xmj-5c39",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-3v85-fqvh-7rxf",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-4xg6-52mh-fpw8",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-527x-5wrf-22m2",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-5c3f-6486-3g7g",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-6447-269v-g68m",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-7g92-g4vh-hp84",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-8w7m-w749-rx98",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-94jr-7pqp-xhcq",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-9q5m-jfc4-wc92",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-9rc6-8cjv-rcvx",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-c29w-qq4m-2gcv",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-h5gx-45rj-2h5j",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-hv4r-mvr4-25vw",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-hxw8-4h9j-hq2r",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-pgh9-mpwc-8jjf",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-ph8x-4jfv-v9v8",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-pj6q-4vq4-r8cg",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-pxh5-6rrc-8rjv",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-qh6q-598w-w6m2",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-v5px-423j-pf7p",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-vqp5-2mrp-qqxg",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-vv66-6rp4-wr4f",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-wmvj-f67g-qg4g",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-xff3-5c9p-2mr4",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-xj69-m9qq-8m94",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GO-2025-4252",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GO-2026-4299",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GO-2026-4331",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GO-2026-4504",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GO-2026-4521",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GO-2026-4670",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GO-2026-4810",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GO-2026-4826",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GO-2026-4842",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GO-2026-4867",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GO-2026-4890",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GO-2026-5193",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GO-2026-5262",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GO-2026-5322",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GO-2026-5460",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GO-2026-5476",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GO-2026-5514",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GO-2026-5589",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GO-2026-5652",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GO-2026-5907",
+      "ecosystem": "Go",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-2c84-35rv-6q3f",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-3533-rvpc-6x56",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-3c7p-vv5r-cmr5",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-3v9f-4vff-rx42",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-46rr-87h4-f5q6",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-4m8c-h7fr-gq5c",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-4mmh-5vw7-rgvj",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-5wc4-w63v-97c3",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-678x-xfp4-r92r",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-6wh8-mr6f-6cx2",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-7jf5-p556-75pr",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-7r3w-wggm-pjwf",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-7rx6-4vwv-432g",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-82j7-2h3j-hc7f",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-83m8-7hj8-ff5w",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-895m-ww55-59vw",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-8f4w-jwqv-5cxc",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-8qxp-g8jv-p37x",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-8rcq-p4gh-vmj8",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-92cv-wv2c-8899",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-9ccm-g362-2r35",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-9h6p-92jq-888x",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-9jq9-c2cv-pcrj",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-f43m-hhj4-q3jg",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-fpj7-9xm6-8hgr",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-gc79-gh4f-9g6w",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-gj9c-69cm-7c37",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-gp5f-gqgq-7254",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-gpw4-7mcw-m8vx",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-h47x-2j37-fw5m",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-h6pp-v4j6-w76c",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-hc44-p2qq-cfm9",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-hg2w-3c4j-jjwm",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-hx44-c87v-p6xg",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-jq6g-p65r-44xr",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-jqwh-jrpg-5j3h",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-m9cj-v55f-8x26",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-mh83-jcw5-rjh8",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-p26v-97vp-jcx6",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-p9p4-97g9-wcrh",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-p9rc-x48f-582x",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-q3pw-6vf2-66hf",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-qmh2-h7r6-gm6q",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-qrh2-mh97-pw8p",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-rfmp-jvr7-hx78",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-v57x-gxfj-484q",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-w3j5-q8f2-3cqq",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-w6q7-ww2x-7gm3",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-xm94-9jw8-p6hw",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-xxjj-jhgc-r68f",
+      "ecosystem": "Maven",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-26j3-4m55-j6r7",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-32qq-m9fh-f74w",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-36hq-v2fc-rpqp",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-3fjv-8r82-6xm9",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-3g79-j8hq-r4xv",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-3p62-6fjh-3p5h",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-4gfc-72gw-v385",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-4grc-q4fj-45p8",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-4xm7-5q79-3fch",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-5cc8-pgp5-7mpm",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-5cf8-vrr8-8hjm",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-6c25-cxcc-pmc4",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-6j27-3xfw-cj2w",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-757p-7hp5-pqmr",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-77cc-w3wm-6whp",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-79jr-8fhm-8wv3",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-7gm3-mwjw-j53w",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-859x-p6jp-rc2w",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-864v-6qj7-62qj",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-86pw-4rqp-6x7v",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-8gc7-whph-rx5q",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-93gh-jgjj-r929",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-9ggw-h9mf-4jh7",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-9hhc-pj4w-w5rv",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-9wrr-4r9v-26xc",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-c2f6-rf2r-6j6f",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-c6mx-3fj9-9j7q",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-cgwf-w82q-5jrr",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-ff3m-68vj-h86p",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-fj64-qprx-q7vq",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-fjpj-2g6w-x25r",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-gx82-jm5q-gfw2",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-h475-7v3c-26q7",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-hf5p-f83x-5q2g",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-jfm4-3vv3-fm4v",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-m3p6-43xj-pf9v",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-m5m2-h6h9-p2c8",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-m9jj-p947-m8xv",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-p2fc-xxr8-fw3p",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-p4qx-6w5p-4rj2",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-pfcc-3g6r-8rg8",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-pmxq-pj47-j8j4",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-qmhq-876f-cr65",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-v6vp-62vc-84qw",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-vrr8-fp7c-7qgp",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-vxf7-mx22-jr24",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-whj9-m24x-qhhp",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-wq3w-3rxh-vcxx",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-xfrj-6vvc-3xm2",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-xgh5-gwq5-rpx8",
+      "ecosystem": "Maven",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-2mvj-q2q3-wxjv",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-2pc2-h97h-2mmw",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-338x-hfx8-vx9x",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-33gp-gmg3-hfpq",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-34fj-r5gq-7395",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-36gf-vpj2-j42w",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-3cpq-rw36-cppv",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-4wxw-42wx-2wfx",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-583g-g682-crxf",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-5mp4-32rr-v3x5",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-6mgp-p75r-vhjm",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-6p92-qfqf-qwx4",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-7845-crfj-phc4",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-7vf4-x5m2-r6gr",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-8886-8v27-85j8",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-8h2m-54wh-gwj3",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-8pv9-qh96-9hc6",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-8r93-59cf-358f",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-8vj9-5v5q-fhch",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-97cq-f4jm-mv8h",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-9gp8-6cg8-7h34",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-9v5q-2gwq-q9hq",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-9wmf-xf3h-r8pr",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-c35h-w8hj-mm55",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-cv55-v6rw-7r5v",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-cx7f-g6mp-7hqm",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-f4qf-m5gf-8jm8",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-g93m-8x6h-g5gv",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-gg7w-pw2r-x2cq",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-h2rq-qhr7-53gm",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-hmqf-wpq9-jq83",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-hrmc-jmp7-mpm2",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-j7jm-8gf5-frcm",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-m6q9-p373-g5q8",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-p63m-vmjr-wg37",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-p7c9-8xx8-h74f",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-pcwp-26pw-j98w",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-pw3x-c5vp-mfc3",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-q2cv-7j58-rfmj",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-q9w2-h4cw-8ghp",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-qpgh-6v9w-vfv6",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-qpxm-689r-3849",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-r7pg-v2c8-mfg3",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-rwf9-8fqr-p44m",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-rwhv-hvj2-qrqm",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-v435-xc8x-wvr9",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-v9wr-2xrg-v7w8",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-vr64-r9qj-h27f",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-xmmm-jw76-q7vg",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-xmvg-335g-x44q",
+      "ecosystem": "Maven",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-29m8-wh9p-5wc4",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-2h4w-p9fh-9rmv",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-2j97-4jmq-c4xf",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-2r4x-667f-mpfh",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-2xcr-p767-f3rv",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-32mf-57h2-64x9",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-4p5r-3jmm-652q",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-5565-3c98-g6jc",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-56r7-h6mw-rcfv",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-57m2-h3fw-rxhw",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-6729-95v3-pjc2",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-6h4f-pj3g-q8fq",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-6p6v-m64v-jx8q",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-6qcg-28jh-hm7r",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-749j-2hp6-8cxm",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-8355-xj3p-hv6q",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-87xj-ghmc-c3xq",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-884f-p57j-f258",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-88m4-h43f-wx84",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-8qjw-9xgm-c9ff",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-8v5q-rhf3-jphm",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-9m7c-m33f-3429",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-9q4x-fr4m-jp86",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-cg6m-9276-qpjj",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-cv2m-5pfp-f245",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-f372-9rcj-8w2c",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-fpw7-8gjc-jwqj",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-fwxx-wv44-7qfg",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-fxj7-6v9w-xc76",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-g88v-2j67-9rmx",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-h83r-7f9f-mqjj",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-hcfh-qjcp-34q9",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-hj95-mhgf-jxc4",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-j7r7-7qmf-xq87",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-jfg6-4gx3-3v7w",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-m63c-3rmg-r2cf",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-mpww-r37c-vxjw",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-mvwq-hcrj-f5x9",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-p2f8-vq4r-gqg3",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-qrh5-jg98-cr48",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-qx7g-fx8q-545g",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-rf73-97j8-9vqh",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-rfh6-9r2q-98vf",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-rgvh-4m82-fvjq",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-v53g-736w-mgw4",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-vgqx-447m-wvcj",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-vmm2-53rc-43v3",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-vqf4-7m7x-wgfc",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-w3mp-6vrj-875g",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-x9hj-q7xv-fv4v",
+      "ecosystem": "Maven",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-2hcp-gjrf-7fhc",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-2jp3-2923-9h52",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-2jrg-rf5x-568g",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-2m67-wjpj-xhg9",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-2mfg-cc43-9pcj",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-35xx-9xrg-gwhf",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-3653-68v6-rq57",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-386j-6m86-78f9",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-3jh5-rr2q-xfv7",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-43ph-42gv-7965",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-43w5-mmxv-cpvh",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-4fp2-3xgg-jg4w",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-5368-6h4h-gr29",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-5476-xc4j-rqcv",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-5568-6qcg-g7fx",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-5g75-477j-2c2f",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-6g23-24mc-hx6x",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-6g26-7cx5-mrrg",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-74xj-wh4w-vqxc",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-77p9-w6pj-rmvg",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-8jrh-7jg8-fvmv",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-98qh-xjc8-98pq",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-9m3c-qcxr-9x87",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-c6r4-qjmw-cvj2",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-c739-f6xw-6pv2",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-c87w-642h-m97h",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-c9q6-g3hr-8gww",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-cmm3-54f8-px4j",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-f2wh-grmh-r6jm",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-gv3v-2cpp-3pmq",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-gx6c-pv62-9mcf",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-gxp5-mv27-vjcj",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-hcvw-475w-8g7p",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-hg6c-8mvr-jqc9",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-hj93-h7pg-fh6v",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-mggx-p7jf-jgw4",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-p462-xxwx-pqf4",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-p9hg-wrmv-v8cp",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-pj6p-9p8x-5mfc",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-q6gh-6v2r-hjv3",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-q6h7-xxp7-7429",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-qc4j-qjqx-vr58",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-qj4x-9g63-25g6",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-qjm3-cvp9-3jj3",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-r8fj-rff6-f7h5",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-rjgh-wgc7-m37j",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-w4fj-87j5-f25c",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-x3j7-7pgj-h87r",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-x4p7-7chp-64hq",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-xcfg-fcr5-gw9r",
+      "ecosystem": "Maven",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-2fc2-6r4j-p65h",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-3r7g-wrpr-j5g4",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-4225-97pr-rr52",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-43q8-3fv7-pr5x",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-4vr8-r7qr-fpvq",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-4vwq-x64q-j4cj",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-574f-mh6m-c6qm",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-5pcj-3m26-w633",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-6445-fm66-fvq2",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-6875-ff47-r6p6",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-7332-36h8-8jh8",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-746v-hfh2-xphm",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-7cwg-2575-3546",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-7gfc-2v6g-6w9f",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-8833-qrvm-wc3h",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-8m9x-pxwq-j236",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-96hw-v598-jvgh",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-ch3j-w953-hfcm",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-crhm-qpjc-cm64",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-f22j-37jj-cxw9",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-gwf7-vfjf-wf6x",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-jf2p-4gqj-849g",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-m748-hjqg-rpp8",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-m84w-vgwf-p893",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-mhhf-vgwh-fw9h",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-q748-mcwg-xmqv",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-q8h9-pqcx-59hw",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-q95h-vc86-hv77",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-qh9x-mc42-vg4g",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-qxpx-j395-pw36",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-r4v4-3jj7-jc29",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-rcmj-xp8f-f6q4",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-v62p-cjv8-35xh",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-vw35-c8hf-fwmq",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-w358-rj93-r5qv",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-wrp6-9w7f-3wxg",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-x7wr-283h-5h2v",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-xf2w-5673-h6ww",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "PYSEC-2022-100",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "PYSEC-2022-107",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "PYSEC-2022-117",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "PYSEC-2022-158",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "PYSEC-2022-162",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "PYSEC-2022-231",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "PYSEC-2022-250",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "PYSEC-2022-31",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "PYSEC-2022-36",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "PYSEC-2022-42982",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "PYSEC-2022-43188",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "PYSEC-2022-82",
+      "ecosystem": "PyPI",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-2qmj-7962-cjq8",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-373w-rj84-pv6x",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-3863-2447-669p",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-4f74-84v3-j9q5",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-4fg9-5w46-xmrj",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-4w59-c3gc-rrhp",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-5hj9-m76g-xrc8",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-626q-v9j4-mcp4",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-64jg-wjww-7c5w",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-68wj-c2jw-5pp9",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-6mjg-37cp-42x5",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-79x5-cv79-49rj",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-95mg-jgfx-54v9",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-9x43-5qcq-h79q",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-cmjc-52fg-9f7j",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-f3wc-3vxv-xmvr",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-f475-x83m-rx5m",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-fqm2-gh8w-gr68",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-fxgc-95xx-grvq",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-h6rp-mprm-xgcq",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-hvc6-42vf-jhf8",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-jg8w-wgx2-g7q4",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-q57w-826p-46jr",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-q764-g6fm-555v",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-qg8p-32gr-gh6x",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-rqr8-pxh7-cq3g",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-v4q9-qgqf-7jwp",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-v9vj-9pxv-mr2w",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-wfm5-v35h-vwf4",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-xqr8-7jwr-rhp7",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "PYSEC-2023-1",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "PYSEC-2023-106",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "PYSEC-2023-116",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "PYSEC-2023-117",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "PYSEC-2023-122",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "PYSEC-2023-198",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "PYSEC-2023-202",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "PYSEC-2023-213",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "PYSEC-2023-228",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "PYSEC-2023-241",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "PYSEC-2023-273",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "PYSEC-2023-282",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "PYSEC-2023-287",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "PYSEC-2023-298",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "PYSEC-2023-320",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "PYSEC-2023-49",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "PYSEC-2023-52",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "PYSEC-2023-78",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "PYSEC-2023-80",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "PYSEC-2023-89",
+      "ecosystem": "PyPI",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-258h-f687-4226",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-27mf-ghqm-j3j8",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-297x-2qf3-jrj3",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-2jxw-4hm4-6w87",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-32p4-gm2c-wmch",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-3783-62vc-jr7x",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-45gq-q4xh-cp53",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-46c3-5xc5-wwhv",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-4m3g-6r7g-jv4f",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-52gm-qmg3-r4qp",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-5f5c-8rvc-j8wf",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-5g73-69p4-7gvx",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-6jrf-rcjf-245r",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-7mv5-5mxh-qg88",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-8495-4g3g-x7pr",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-8w49-h785-mj3c",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-99w2-67h8-5948",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-f27h-g923-68hw",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-f6f8-9mx6-9mx2",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-g92j-qhmh-64v2",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-gpgj-xrgw-8mx2",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-h59x-p739-982c",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-j757-pf57-f8r4",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-m2v9-w374-5hj9",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-m49c-5c52-6696",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-pcfx-g2j2-f6f6",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-pq9p-pc3p-9hm4",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-qmjf-wc2h-6x3q",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-vm8q-m57g-pff3",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-vx3h-qwqw-r2wq",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-whf4-fpj8-pgg8",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "PYSEC-2024-105",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "PYSEC-2024-14",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "PYSEC-2024-149",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "PYSEC-2024-152",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "PYSEC-2024-173",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "PYSEC-2024-213",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "PYSEC-2024-214",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "PYSEC-2024-225",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "PYSEC-2024-24",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "PYSEC-2024-242",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "PYSEC-2024-248",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "PYSEC-2024-285",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "PYSEC-2024-293",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "PYSEC-2024-3",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "PYSEC-2024-309",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "PYSEC-2024-48",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "PYSEC-2024-66",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "PYSEC-2024-7",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "PYSEC-2024-99",
+      "ecosystem": "PyPI",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-227r-w5j2-6243",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-24hm-wm2h-h8w7",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-2hmp-5wqg-f24h",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-35p3-6j45-prwm",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-496f-x7cq-cq39",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-49mj-x8jp-qvfc",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-4qqf-9m5c-w2c5",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-4v6w-xpmh-gfgp",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-53gh-p8jc-7rg8",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-6w4w-5w54-rjvr",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-768j-98cg-p3fv",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-8mf9-rmgw-33qc",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-8qvm-5x2c-j2w7",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-98fp-7v67-4v3q",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-9g44-gwvm-hc44",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-9ggr-2464-2j32",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-9pcc-gvx5-r5wm",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-9q4r-x2hj-jmvr",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-9xwc-hfwc-8w59",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-c4cc-w454-4634",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-cvf4-f829-762v",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-f3mf-hm6v-jfhh",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-f823-phmg-x5fr",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-gx77-xgc2-4888",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-hcqg-5g63-7j9h",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-hf3c-wxg2-49q9",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-hxp3-63hc-5366",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-jfx9-29x2-rv3j",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-jxr6-qrxx-2ph2",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-m3mq-f375-5vgh",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-mq84-hjqx-cwf2",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-pp64-wj43-xqcr",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-pw67-xjhq-389w",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-pwh4-6r3m-j2rf",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-qc2h-74x3-4v3w",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-v39m-5m9j-m9w9",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-w7xj-8fx7-wfch",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-x698-5hjm-w2m5",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-xm59-rqc7-hhvf",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "PYSEC-2025-1",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "PYSEC-2025-102",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "PYSEC-2025-106",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "PYSEC-2025-121",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "PYSEC-2025-128",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "PYSEC-2025-17",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "PYSEC-2025-211",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "PYSEC-2025-216",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "PYSEC-2025-262",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "PYSEC-2025-53",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "PYSEC-2025-99",
+      "ecosystem": "PyPI",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-4x4j-2g7c-83w6",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-5389-f7vh-wxj8",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-5549-c5q7-fj65",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-63v4-w882-g4x2",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-86qp-5c8j-p5mr",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-8wrq-fv5f-pfp2",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-cr42-rg2m-mq4q",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-ffp3-3562-8cv3",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-ffv6-jj46-x367",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-g9fx-5r4h-pcw3",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-qmc5-gv6v-8p22",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-1349",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-1380",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-1394",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-1473",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-1479",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-1600",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-165",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-1716",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-1719",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-1731",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-1859",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-190",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-1960",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-2093",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-2339",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-2456",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-2585",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-2594",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-2613",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-2717",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-2736",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-2851",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-3091",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-3438",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-350",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-375",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-402",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-45",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-504",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-517",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-606",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-642",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-667",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-694",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-785",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-82",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-86",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-911",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "PYSEC-2026-950",
+      "ecosystem": "PyPI",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-3829-mgmw-jcg4",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-3v5x-qjrp-q2hq",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-446w-rrm4-r47f",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-462r-wxvm-jvxh",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-4g77-cvgw-grvw",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-4vm8-j95f-j6v5",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-4vvg-x86p-mvqc",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-4wc5-gfgh-4vjx",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-4wf5-vphf-c2xc",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-5875-m6jq-vf78",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-5p8w-2mvw-38pv",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-6h5x-7c5m-7cr7",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-6jqm-3c9g-pch7",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-7249-8x22-4rg4",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-76p3-8jx3-jpfq",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-77m7-9wvw-87fx",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-7r3h-m5j6-3q42",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-7vrv-5m2h-rjw9",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-86wf-436m-h424",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-8f8g-9j73-7p82",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-8qr4-xgw6-wmr3",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-9g4f-5rpg-4948",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-9p95-fxvg-qgq2",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-9vp3-7qwq-83r9",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-9ww8-j8j2-3788",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-cr84-xvw4-qx3c",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-gh88-3pxp-6fm8",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-gjm5-83cw-p3p2",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-grv6-m753-3w2g",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-h8wp-wgcq-qhrf",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-hgjh-723h-mx2j",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-hgp8-w8fj-r4cm",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-hqq7-2q2v-82xq",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-hw2p-xqhq-3mjf",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-jfxm-w8g2-4rcv",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-mw4x-g2x8-qcvf",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-p23c-p8w2-ww5v",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-p2jh-44qj-pf2v",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-p77r-c6m3-gj2r",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-pg98-6v7f-2xfv",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-prc3-vjfx-vhm9",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-q4q5-c5cv-2p68",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-q6wq-5p59-983w",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-r9w3-g83q-m6hq",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-rvgf-69j7-xh78",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-vqgr-mfxm-47f3",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-wc29-h54q-q8qx",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-wc4x-qmr2-rj8h",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-x2jx-w3wm-9p3p",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-xrc4-737v-9q75",
+      "ecosystem": "npm",
+      "year": 2022
+    },
+    {
+      "document_id": "GHSA-2h87-4q2w-v4hf",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-2rq5-699j-x7p6",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-32gr-4cq6-5w5q",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-44ff-9w4f-99w6",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-45c3-c4c3-8rqg",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-465f-mxxh-grc4",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-4qcv-qf38-5j3j",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-4vq7-882g-wcg4",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-5r98-f33j-g8h7",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-64wp-jh9p-5cg2",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-699g-q6qh-q4v8",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-6h67-934r-82g7",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-749c-pc87-4qcw",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-7h4w-6p98-r3wx",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-7vxc-q7rv-qfj8",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-7x97-j373-85x5",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-88qf-5f3v-pm6m",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-8c93-4hch-xgxp",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-92r3-m2mg-pj97",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-95rp-6gqp-6622",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-9759-3276-g2pm",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-9pv7-vfvm-6vr7",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-9vvw-cc9w-f27h",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-c2qf-rxjj-qqgw",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-c79f-pqgf-fhp3",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-c9vx-2g7w-rp65",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-f6gv-hh8j-q8vq",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-f737-3fh6-jf6w",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-fj78-2vc5-f6cm",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-g644-9gfx-q4q4",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-g9ph-r9hc-34r8",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-gc34-5v43-h7v8",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-gggm-66rh-pp98",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-gx6r-qc2v-3p3v",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-h53w-7qw7-vh5c",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-hx4h-676r-j3qp",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-m95q-7qp3-xv42",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-mx2q-35m2-x2rh",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-p2vx-qj66-88q3",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-p8p7-x288-28g6",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-p9w8-2mpq-49h9",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-pwfr-8pq7-x9qv",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-qghr-877h-f9jh",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-rwf3-w4jq-f4cm",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-v8fc-qxvj-f3mg",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-vfmp-9999-6wqj",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-w35p-wxwj-rcm9",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-wrh9-cjv3-2hpw",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-x2jc-989c-47q4",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-xrpm-hccg-28x7",
+      "ecosystem": "npm",
+      "year": 2023
+    },
+    {
+      "document_id": "GHSA-25hc-qcg6-38wj",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-2qjp-fg8c-g878",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-2xcc-vm3f-m8rw",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-34q8-jcq6-mc37",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-3fc8-2r3f-8wrg",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-3wf4-68gx-mph8",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-3xgq-45jj-v275",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-49j4-86m8-q2jw",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-4c2g-hx49-7h25",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-4fh7-m2wx-6wfm",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-4w4v-5hc9-xrr2",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-584q-6j8j-r5pm",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-5j94-f3mf-8685",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-5jjq-8cvj-v6m9",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-6433-x5p4-8jc7",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-68g8-c275-xf2m",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-6cf6-8hvr-r68w",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-6m59-8fmv-m5f9",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-6wp6-22x5-rr3w",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-7q7g-4xm8-89cq",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-93pf-mrc8-4g3h",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-96g7-g7g9-jxw8",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-9cgf-pxwq-2cpw",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-9m6m-c64r-w4f4",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-9p6p-8v9r-8c9m",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-c4pw-33h3-35xw",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-cvr6-37gx-v8wc",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-fffg-cwc9-xvj7",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-fmj9-77q8-g6c4",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-g49q-jw42-6x85",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-g533-xq5w-jmf3",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-g77x-44xx-532m",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-ghr5-ch3p-vcr6",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-gj3p-j74v-3x57",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-h3pq-667x-r789",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-hgxw-5xg3-69jx",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-m6fv-jmcg-4jfg",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-m7xq-9374-9rvx",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-mj4p-gmhr-92g3",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-p9ff-j98v-p435",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-q6w5-jg5q-47vg",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-qg73-g3cf-vhhh",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-qj86-v6m7-4qv2",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-rcvg-rgf7-pppv",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-rm97-x556-q36h",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-vvhj-v88f-5gxr",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-wh5w-82f3-wrxh",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-wjc4-73q6-gv3m",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-ww7p-8gfg-v82r",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-wxr3-2hgv-qm8f",
+      "ecosystem": "npm",
+      "year": 2024
+    },
+    {
+      "document_id": "GHSA-2j4c-9qqq-896r",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-37j7-fg3j-429f",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-3h7r-4xxj-3mfm",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-3p6v-hrg8-8qj7",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-495j-h493-42q2",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-55jh-84jv-8mx8",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-5jpx-9hw9-2fx4",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-5vhg-9xg4-cv9m",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-79vf-hf9f-j9q8",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-859w-5945-r5v3",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-8gqj-226h-gm8r",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-8qff-qr5q-5pr8",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-8vvx-qvq9-5948",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-8xq3-w9fx-74rv",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-93m4-6634-74q7",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-99h5-pjcv-gr6v",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-99pg-hqvx-r4gf",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-9f2h-7v79-mxw3",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-9f65-56v6-gxw7",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-9jr9-8ff3-m894",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-c6m7-q6pr-c64r",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-cxrh-j4jr-qwg3",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-ff9h-848c-4xfj",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-fvx2-x7ff-fc56",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-g4c9-f287-64xg",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-g4mf-96x5-5m2c",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-hfj7-542q-8fvv",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-hg3j-6pmh-mvjr",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-j3w7-9qc3-g96p",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-j76j-5p5g-9wfr",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-jv9m-vf54-chjj",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-m837-g268-mmv7",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-mv7p-34fv-4874",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-mx7m-j9xf-62hw",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-p6rm-483j-37jf",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-pfr4-4397-3hg8",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-ph6w-f82w-28w6",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-rwvc-j5jr-mgvh",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-v2mw-5mch-w8c5",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-v62p-rq8g-8h59",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-v98v-ff95-f3cp",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-vjh7-7g9h-fjfh",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-w48q-cv73-mx4w",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-wjmp-wphq-jvqf",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-wvxp-jp4w-w8wg",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-x4c5-c7rf-jjgv",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-x574-m823-4x7w",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-xfhv-wqj6-rx99",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-xj5p-8h7g-76m7",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-xq7p-g2vc-g82p",
+      "ecosystem": "npm",
+      "year": 2025
+    },
+    {
+      "document_id": "GHSA-2c4m-g7rx-63q7",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-2c5x-4jgf-88mj",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-2fgq-7j6h-9rm4",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-2qvq-rjwj-gvw9",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-37v6-fxx8-xjmx",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-3jxr-9vmj-r5cp",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-3wqp-prf6-2m72",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-45hj-9x76-wp9g",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-4g3v-8h47-v7g6",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-4q6h-8p4v-67vq",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-525j-hqq2-66r4",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-5v7r-6r5c-r473",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-62q6-4hv4-vjrw",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-67mf-f936-ppxf",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-736r-jwj6-4w23",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-7ch5-98q2-7289",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-7jp6-r74r-995q",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-7m6r-fhh7-r47c",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-7r9j-r86q-7g45",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-855c-r2vq-c292",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-87f9-hvmw-gh4p",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-8x5q-pvf5-64mp",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-f37v-82c4-4x64",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-fvx6-pj3r-5q4q",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-g27f-9qjv-22pm",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-gg9v-mgcp-v6m7",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-gh4j-gqv2-49f6",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-gjjc-pcwp-c74m",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-gvmj-g25r-r7wr",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-h3x4-hc5v-v2gm",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-j5f8-grm9-p9fc",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-j8v8-g9cx-5qf4",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-jxx9-px88-pj69",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-mgrq-9f93-wpp5",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-mhrx-qhrj-673w",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-mp66-rf4f-mhh8",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-mr6q-rp88-fx84",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-p9xr-7p9p-gpqx",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-q4x5-8cj6-52wg",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-q728-gf8j-w49r",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-q7q8-3mgw-q67r",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-q89c-q3h5-w34g",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-q8mj-m7cp-5q26",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-qxhc-wx3p-2wmg",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-rv78-f8rc-xrxh",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-v7j5-vc4m-723w",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-w7jw-789q-3m8p",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-wjjv-3mj2-39hf",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-xh43-g2fq-wjrj",
+      "ecosystem": "npm",
+      "year": 2026
+    },
+    {
+      "document_id": "GHSA-xq7h-vwjp-5vrh",
+      "ecosystem": "npm",
+      "year": 2026
+    }
+  ]
+}
