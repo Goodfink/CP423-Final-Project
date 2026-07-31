@@ -38,7 +38,7 @@
     },
     "bm25": {
       "answer": "Unauthorized actions include sending requests to delete-objects through the s3 gateway and deleting files they are not authorized to delete.",
-      "correct": false,
+      "correct": true,
       "citations_accurate": false,
       "retrieved_document_ids": [
         "GHSA-28q9-9c3g-v3f9"
@@ -147,7 +147,7 @@
     },
     "bm25": {
       "answer": "Apache Tomcat vulnerabilities allow remote attackers to cause a denial of service (CPU consumption) when listing a web directory with a large number of files. This is due to a flaw in the way the application handles concurrent requests. The fix addresses this issue by ensuring that each request is processed independently and does not consume excessive CPU resources simultaneously.",
-      "correct": false,
+      "correct": true,
       "citations_accurate": false,
       "retrieved_document_ids": [
         "GHSA-8f4w-jwqv-5cxc"
@@ -202,7 +202,7 @@
     },
     "bm25": {
       "answer": "To remediate the remote code execution vulnerability in Apache Airflow's Docker provider, users should:\n\n1. **Disable Loading Example DAGs**: Ensure that no examples of the problematic DAG are loaded into the Docker container.\n2. **Upgrade Apache Airflow Providers**: Upgrade both the Apache Airflow ODBC Provider and the Apache Airflow MSSQL Provider to their latest stable versions.\n3. **Check Dependencies**: Verify that all dependencies are up-to-date and compatible with the new versions of the providers.\n4. **Update Configuration**: Review and update any configuration files related to the Docker containers where the provider is used.\n5. **Review Code**: Check the source code of the Docker containers to ensure there are no vulnerabilities present that could be exploited.\n\nBy following these steps, users can mitigate the risk associated with this remote code execution vulnerability in Apache Airflow's Docker provider.",
-      "correct": true,
+      "correct": false,
       "citations_accurate": false,
       "retrieved_document_ids": [
         "GHSA-746v-hfh2-xphm",
@@ -308,7 +308,7 @@
     "question_type": "multi-hop",
     "bm25": {
       "answer": "The lakeFS vulnerability affects authenticated users who can send requests to delete-objects through the s3 gateway and delete files they are not authorized to delete. The fix is available in lakeFS version 0.82.0 and later. \n\nThe shescape vulnerability exposes the home directory on Unix systems when using Bash with the `escape` or `escapeAll` functions from the _shescape_ API with the `interpolation` option set to `true`. This vulnerability is present in both versions of shescape (v1.5.1 and later).\n\nFor more information, please refer to the following references:\n\n- LakeFS Security Advisory: [https://github.com/treeverse/lakeFS/security/advisories/LAKEFS-2022-1019](https://github.com/treeverse/lakeFS/security/advisories/LAKEFS-2022-1019)\n- GitHub Issue: [https://github.com/ericcornelissen/shescape/issues/169](https://github.com/ericcornelissen/shescape/issues/169)\n\nThe lakeFS vulnerability is fixed in version 0.82.0 and later, while the shescape vulnerability is fixed in version 1.5.1.",
-      "correct": true,
+      "correct": false,
       "citations_accurate": false,
       "retrieved_document_ids": [
         "GHSA-cr84-xvw4-qx3c",

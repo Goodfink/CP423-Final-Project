@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
-from llm.llm_setup import HuggingFaceLLM
-from evaluation.evaluation_metrics import EvaluationMetrics
+from src.llm.llm_setup import HuggingFaceLLM
+from src.evaluation.evaluation_metrics import EvaluationMetrics
 
 evaluation_file = Path("src/evaluation/evaluation_set.json")
 with open(evaluation_file) as f:

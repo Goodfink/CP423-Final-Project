@@ -1,11 +1,18 @@
+from src.reproducibility import DEVICE
 import json
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
+MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
+MODEL_REVISION = "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+
 class DenseRetriever:
-    def __init__(self, model_name='all-MiniLM-L6-v2'):
+    def __init__(self, model_name=MODEL_NAME, model_revision=MODEL_REVISION):
         """Initialize dense retriever with embedding model"""
-        self.model = SentenceTransformer(model_name)
+        self.model = SentenceTransformer(model_name, revision=model_revision, device=DEVICE)
+        self.model.eval()
+        self.model_name = model_name
+        self.model_revision = model_revision
         self.records = []
         self.embeddings = None
         self.document_ids = []
@@ -27,7 +34,10 @@ class DenseRetriever:
         print(f"Encoding {len(texts_to_embed)} documents...")
         self.embeddings = self.model.encode(
             texts_to_embed,
+            batch_size=32,
             show_progress_bar=True,
+            convert_to_numpy=True,
+            precision="float32",
             normalize_embeddings=True
         )
         print(f"Index built with {len(self.embeddings)} embeddings")
@@ -41,7 +51,12 @@ class DenseRetriever:
             raise ValueError("top_k must be greater than 0")
         
         # Encode the query
-        query_embedding = self.model.encode(query, normalize_embeddings=True)
+        query_embedding = self.model.encode(
+            query,
+            convert_to_numpy=True,
+            precision="float32",
+            normalize_embeddings=True
+        )
         
         # Compute similarity (cosine similarity via dot product on normalized vectors)
         similarities = np.dot(self.embeddings, query_embedding)
