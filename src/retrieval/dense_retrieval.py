@@ -1,6 +1,5 @@
 import json
 import numpy as np
-from pathlib import Path
 from sentence_transformers import SentenceTransformer
 
 class DenseRetriever:
@@ -26,7 +25,11 @@ class DenseRetriever:
             texts_to_embed.append(record.get('retrieval_text', ''))
         
         print(f"Encoding {len(texts_to_embed)} documents...")
-        self.embeddings = self.model.encode(texts_to_embed, show_progress_bar=True)
+        self.embeddings = self.model.encode(
+            texts_to_embed,
+            show_progress_bar=True,
+            normalize_embeddings=True
+        )
         print(f"Index built with {len(self.embeddings)} embeddings")
     
     def search(self, query, top_k=5):
@@ -38,7 +41,7 @@ class DenseRetriever:
             raise ValueError("top_k must be greater than 0")
         
         # Encode the query
-        query_embedding = self.model.encode(query)
+        query_embedding = self.model.encode(query, normalize_embeddings=True)
         
         # Compute similarity (cosine similarity via dot product on normalized vectors)
         similarities = np.dot(self.embeddings, query_embedding)

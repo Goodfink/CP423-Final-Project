@@ -1,122 +1,129 @@
 [
   {
     "question_id": "q1",
-    "question": "Which version of github.com/dhowden/tag fixes the out-of-bounds read panic vulnerability?",
+    "question": "Which version fixes the out-of-bounds read vulnerability in github.com/dhowden/tag?",
     "ground_truth_answer": "Version 0.0.0-20201120070457-d52dcb253c63",
+    "required_answer_terms": [["0.0.0-20201120070457-d52dcb253c63"]],
     "ground_truth_chunk_ids": ["GHSA-27mh-3343-6hg5"],
     "question_type": "factoid",
     "difficulty": "easy"
   },
   {
     "question_id": "q2",
-    "question": "What is the severity of the dhowden tag vulnerability?",
-    "ground_truth_answer": "MODERATE (CVSS score 7.5)",
-    "ground_truth_chunk_ids": ["GHSA-27mh-3343-6hg5"],
+    "question": "What unauthorized action can authenticated users perform in vulnerable versions of lakeFS?",
+    "ground_truth_answer": "Authenticated users can delete files they are not authorized to delete through the S3 gateway",
+    "required_answer_terms": [["delet"], ["unauthori", "not authorized"]],
+    "forbidden_answer_terms": ["cannot perform unauthorized", "cannot delete"],
+    "ground_truth_chunk_ids": ["GHSA-28q9-9c3g-v3f9"],
     "question_type": "factoid",
     "difficulty": "easy"
   },
   {
     "question_id": "q3",
-    "question": "Is there a vulnerability in lakeFS related to authenticated users?",
-    "ground_truth_answer": "Yes, authenticated users can delete files they are not authorized to delete in lakeFS before version 0.82.0",
-    "ground_truth_chunk_ids": ["GHSA-28q9-9c3g-v3f9"],
+    "question": "What type of vulnerability affects Caddy v2.4 in CVE-2022-29718?",
+    "ground_truth_answer": "An open redirect vulnerability",
+    "required_answer_terms": [["open redirect"]],
+    "ground_truth_chunk_ids": ["GHSA-2927-hv3p-f3vp"],
     "question_type": "factoid",
     "difficulty": "easy"
   },
   {
     "question_id": "q4",
-    "question": "What workaround exists for the lakeFS vulnerability?",
-    "ground_truth_answer": "Drop specific requests with 'Authorization' header that starts with 'AWS' at the lakeFS listen port",
-    "ground_truth_chunk_ids": ["GHSA-28q9-9c3g-v3f9"],
+    "question": "Which two Venice functions are affected by the partial path traversal vulnerability?",
+    "ground_truth_answer": "The load-file and load-resource functions",
+    "required_answer_terms": [["load-file"], ["load-resource"]],
+    "ground_truth_chunk_ids": ["GHSA-4mmh-5vw7-rgvj"],
     "question_type": "factoid",
     "difficulty": "medium"
   },
   {
     "question_id": "q5",
-    "question": "I don't know",
-    "ground_truth_answer": "I don't know - this is not a valid question",
-    "ground_truth_chunk_ids": [],
-    "question_type": "unanswerable",
+    "question": "What vulnerability affects Jenkins Nested View Plugin 1.20 and earlier?",
+    "ground_truth_answer": "An XML external entity (XXE) vulnerability",
+    "required_answer_terms": [["XML external entity", "XXE"]],
+    "ground_truth_chunk_ids": ["GHSA-5wc4-w63v-97c3"],
+    "question_type": "factoid",
     "difficulty": "easy"
   },
   {
     "question_id": "q6",
-    "question": "How many vulnerabilities are in the database?",
-    "ground_truth_answer": "I don't know - the corpus contains 1000 sampled advisories, not the total count",
-    "ground_truth_chunk_ids": [],
-    "question_type": "unanswerable",
-    "difficulty": "easy"
-  },
-  {
-    "question_id": "q7",
-    "question": "What type of attack vector does the dhowden tag vulnerability enable, and what is the recommended fix version?",
-    "ground_truth_answer": "It enables denial of service (DoS) attacks. Fix: upgrade to version 0.0.0-20201120070457-d52dcb253c63 or later.",
-    "ground_truth_chunk_ids": ["GHSA-27mh-3343-6hg5"],
-    "question_type": "multi-hop",
+    "question": "What causes the denial of service in Apache Tomcat versions 5.5.0 through 5.5.11?",
+    "ground_truth_answer": "A large number of simultaneous requests to list a web directory containing many files causes CPU consumption",
+    "required_answer_terms": [["simultaneous requests", "concurrent requests"], ["web directory", "directory"], ["many files", "large number of files"]],
+    "ground_truth_chunk_ids": ["GHSA-8f4w-jwqv-5cxc"],
+    "question_type": "factoid",
     "difficulty": "medium"
   },
   {
+    "question_id": "q7",
+    "question": "What attack can allow local users to write arbitrary files in NumPy versions before 1.8.1?",
+    "ground_truth_answer": "A symlink attack on a temporary file",
+    "required_answer_terms": [["symlink"]],
+    "ground_truth_chunk_ids": ["GHSA-2fc2-6r4j-p65h"],
+    "question_type": "factoid",
+    "difficulty": "easy"
+  },
+  {
     "question_id": "q8",
-    "question": "What is the impact of the lakeFS vulnerability and what version fixes it?",
-    "ground_truth_answer": "Authenticated users can delete unauthorized files. Fixed in lakeFS v0.82.0 and later.",
-    "ground_truth_chunk_ids": ["GHSA-28q9-9c3g-v3f9"],
-    "question_type": "multi-hop",
+    "question": "How can users remediate the remote code execution vulnerability in Apache Airflow's Docker provider?",
+    "ground_truth_answer": "Disable loading example DAGs or upgrade apache-airflow-providers-docker to version 3.0.0 or later",
+    "required_answer_terms": [["disable loading example DAGs", "disable loading of example DAGs", "3.0.0"]],
+    "forbidden_answer_terms": ["ODBC Provider", "MSSQL Provider"],
+    "ground_truth_chunk_ids": ["GHSA-746v-hfh2-xphm"],
+    "question_type": "factoid",
     "difficulty": "medium"
   },
   {
     "question_id": "q9",
-    "question": "Which package is affected by the out-of-bounds panic and what type of vulnerability is it?",
-    "ground_truth_answer": "Package: github.com/dhowden/tag. Type: out-of-bounds read causing denial of service.",
-    "ground_truth_chunk_ids": ["GHSA-27mh-3343-6hg5"],
-    "question_type": "multi-hop",
-    "difficulty": "medium"
+    "question": "Which shell is affected by shescape's home-directory exposure vulnerability?",
+    "ground_truth_answer": "Bash",
+    "required_answer_terms": [["Bash"]],
+    "ground_truth_chunk_ids": ["GHSA-446w-rrm4-r47f"],
+    "question_type": "factoid",
+    "difficulty": "easy"
   },
   {
     "question_id": "q10",
-    "question": "What is the primary programming language for the Go ecosystem vulnerabilities in the corpus?",
-    "ground_truth_answer": "I don't know - the corpus doesn't specify the primary language used",
-    "ground_truth_chunk_ids": [],
-    "question_type": "unanswerable",
+    "question": "What workaround is recommended for the node-saml signature-bypass vulnerability?",
+    "ground_truth_answer": "Disable SAML authentication",
+    "required_answer_terms": [["disable SAML"]],
+    "ground_truth_chunk_ids": ["GHSA-5p8w-2mvw-38pv"],
+    "question_type": "factoid",
     "difficulty": "medium"
   },
   {
     "question_id": "q11",
-    "question": "How does improper bounds checking in the dhowden tag library lead to a security risk when parsing user-supplied input?",
-    "ground_truth_answer": "Improper bounds checking allows out-of-bounds reads that trigger panics. When the library parses user-supplied input, this can be exploited as a denial of service vector.",
-    "ground_truth_chunk_ids": ["GHSA-27mh-3343-6hg5"],
+    "question": "Which versions fix the Caddy open redirect and the Venice partial path traversal vulnerabilities?",
+    "ground_truth_answer": "Caddy is fixed in version 2.5.0 and Venice is fixed in version 1.10.17",
+    "required_answer_terms": [["2.5.0"], ["1.10.17"]],
+    "ground_truth_chunk_ids": ["GHSA-2927-hv3p-f3vp", "GHSA-4mmh-5vw7-rgvj"],
     "question_type": "multi-hop",
     "difficulty": "hard"
   },
   {
     "question_id": "q12",
-    "question": "What are all the CVE identifiers associated with the dhowden tag panic vulnerability?",
-    "ground_truth_answer": "CVE-2020-29242, CVE-2020-29243, CVE-2020-29244, CVE-2020-29245",
-    "ground_truth_chunk_ids": ["GHSA-27mh-3343-6hg5"],
-    "question_type": "factoid",
-    "difficulty": "medium"
+    "question": "What are the security impacts and fixed versions for the lakeFS and shescape vulnerabilities?",
+    "ground_truth_answer": "lakeFS allows authenticated users to delete unauthorized files and is fixed in version 0.82.0; shescape exposes the home directory in Bash and is fixed in version 1.5.1",
+    "required_answer_terms": [["delet"], ["unauthori", "not authorized"], ["0.82.0"], ["home directory"], ["Bash"], ["1.5.1"]],
+    "forbidden_answer_terms": ["v1.5.1 and later", "1.5.1 and later"],
+    "ground_truth_chunk_ids": ["GHSA-28q9-9c3g-v3f9", "GHSA-446w-rrm4-r47f"],
+    "question_type": "multi-hop",
+    "difficulty": "hard"
   },
   {
     "question_id": "q13",
-    "question": "When was the lakeFS authorization bypass vulnerability published?",
-    "ground_truth_answer": "September 23, 2022",
-    "ground_truth_chunk_ids": ["GHSA-28q9-9c3g-v3f9"],
-    "question_type": "factoid",
-    "difficulty": "easy"
-  },
-  {
-    "question_id": "q14",
-    "question": "What package manager ecosystems are covered in this vulnerability database?",
-    "ground_truth_answer": "I don't know - the corpus contains advisories from multiple ecosystems but doesn't provide a comprehensive overview",
+    "question": "Which version fixes CVE-2099-99999?",
+    "ground_truth_answer": "I don't know",
     "ground_truth_chunk_ids": [],
     "question_type": "unanswerable",
     "difficulty": "easy"
   },
   {
-    "question_id": "q15",
-    "question": "Describe both the security impact of the dhowden tag vulnerability and the affected versions, and explain what triggers the panic.",
-    "ground_truth_answer": "The vulnerability allows out-of-bounds reads in dhowden tag versions before 0.0.0-20201120070457-d52dcb253c63. When parsing user-supplied input, improper bounds checking allows attempted out-of-bounds reads that trigger a panic, enabling denial of service attacks.",
-    "ground_truth_chunk_ids": ["GHSA-27mh-3343-6hg5"],
-    "question_type": "multi-hop",
-    "difficulty": "hard"
+    "question_id": "q14",
+    "question": "What vulnerability affects the package example-security-widget?",
+    "ground_truth_answer": "I don't know",
+    "ground_truth_chunk_ids": [],
+    "question_type": "unanswerable",
+    "difficulty": "easy"
   }
 ]

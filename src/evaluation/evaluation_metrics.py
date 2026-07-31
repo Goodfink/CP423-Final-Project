@@ -1,5 +1,6 @@
 import json
 import re
+import unicodedata
 from pathlib import Path
 
 class EvaluationMetrics:
@@ -32,7 +33,11 @@ class EvaluationMetrics:
         # At least one citation should match
         return bool(cited_set & truth_set)
     
-    def evaluate_answer(self, generated_answer, ground_truth_answer, question_type, ground_truth_chunk_ids):
+    def normalize_text(self, text):
+        text = unicodedata.normalize("NFKD", text).lower()
+        return " ".join(re.findall(r"[a-z0-9]+", text))
+
+    def evaluate_answer(self, generated_answer, ground_truth_answer, question_type, ground_truth_chunk_ids, required_answer_terms=None, forbidden_answer_terms=None):
         """Evaluate a single answer"""
         
         result = {
@@ -76,16 +81,23 @@ class EvaluationMetrics:
             if not citations_match and cited_ids:
                 result["notes"].append(f"Citations don't match. Expected from {ground_truth_chunk_ids}, got {cited_ids}")
         
-        # Basic correctness check (word overlap)
-        ground_words = set(ground_truth_answer.lower().split())
-        answer_words = set(generated_answer.lower().split())
-        
-        overlap = ground_words & answer_words
-        if len(overlap) > 2:
+        normalized_answer = self.normalize_text(generated_answer)
+        required_answer_terms = required_answer_terms or [[ground_truth_answer]]
+        forbidden_answer_terms = forbidden_answer_terms or []
+        required_match = all(
+            any(self.normalize_text(term) in normalized_answer for term in alternatives)
+            for alternatives in required_answer_terms
+        )
+        forbidden_match = any(
+            self.normalize_text(term) in normalized_answer
+            for term in forbidden_answer_terms
+        )
+
+        if required_match and not forbidden_match:
             result["correct"] = True
-            result["notes"].append(f"Answer contains key terms from ground truth")
+            result["notes"].append("Answer satisfies required facts")
         else:
-            result["notes"].append("Answer doesn't match ground truth")
+            result["notes"].append("Answer does not satisfy required facts")
         
         return result
     
@@ -103,6 +115,8 @@ class EvaluationMetrics:
         unanswerable_count = sum(1 for r in all_results if r["question_type"] == "unanswerable")
         factoid_count = sum(1 for r in all_results if r["question_type"] == "factoid")
         multihop_count = sum(1 for r in all_results if r["question_type"] == "multi-hop")
+        factoid_correct = sum(1 for r in all_results if r["question_type"] == "factoid" and r["correct"])
+        multihop_correct = sum(1 for r in all_results if r["question_type"] == "multi-hop" and r["correct"])
         
         return {
             "total_questions": total,
@@ -111,8 +125,8 @@ class EvaluationMetrics:
             "citation_accuracy": citations_accurate / (total - unanswerable_count) if (total - unanswerable_count) > 0 else 0,
             "idontknow_accuracy": appropriate_idontknow / unanswerable_count if unanswerable_count > 0 else 0,
             "breakdown": {
-                "factoid": {"count": factoid_count},
-                "multi_hop": {"count": multihop_count},
-                "unanswerable": {"count": unanswerable_count}
+                "factoid": {"count": factoid_count, "correct": factoid_correct, "accuracy": factoid_correct / factoid_count if factoid_count else 0},
+                "multi_hop": {"count": multihop_count, "correct": multihop_correct, "accuracy": multihop_correct / multihop_count if multihop_count else 0},
+                "unanswerable": {"count": unanswerable_count, "correct": appropriate_idontknow, "accuracy": appropriate_idontknow / unanswerable_count if unanswerable_count else 0}
             }
         }

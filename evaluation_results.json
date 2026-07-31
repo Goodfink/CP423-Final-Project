@@ -1,0 +1,364 @@
+[
+  {
+    "question_id": "q1",
+    "question": "Which version fixes the out-of-bounds read vulnerability in github.com/dhowden/tag?",
+    "question_type": "factoid",
+    "no_retrieval": {
+      "answer": "The GitHub repository for the issue is https://github.com/dhowden/tag. The specific version that fixes the out-of-bounds read vulnerability is 0.13.2.",
+      "correct": false,
+      "manual_correct": null
+    },
+    "bm25": {
+      "answer": "github.com/dhowden/tag fixed in 0.0.0-20201120070457-d52dcb253c63",
+      "correct": true,
+      "citations_accurate": false,
+      "retrieved_document_ids": [
+        "GHSA-27mh-3343-6hg5"
+      ]
+    },
+    "dense": {
+      "answer": "github.com/dhowden/tag fixed in 0.0.0-20201120070457-d52dcb253c63",
+      "correct": true,
+      "citations_accurate": false,
+      "retrieved_document_ids": [
+        "GHSA-27mh-3343-6hg5",
+        "GO-2023-2074",
+        "GHSA-5pcj-3m26-w633"
+      ]
+    }
+  },
+  {
+    "question_id": "q2",
+    "question": "What unauthorized action can authenticated users perform in vulnerable versions of lakeFS?",
+    "question_type": "factoid",
+    "no_retrieval": {
+      "answer": "In vulnerable versions of lakeFS, authenticated users cannot perform unauthorized actions such as deleting files or directories without explicit permission from the user who owns them. This is because these operations require specific permissions that are not granted to authenticated users in newer versions of lakeFS.",
+      "correct": false,
+      "manual_correct": null
+    },
+    "bm25": {
+      "answer": "Unauthorized actions include sending requests to delete-objects through the s3 gateway and deleting files they are not authorized to delete.",
+      "correct": false,
+      "citations_accurate": false,
+      "retrieved_document_ids": [
+        "GHSA-28q9-9c3g-v3f9"
+      ]
+    },
+    "dense": {
+      "answer": "Unauthorized action that authenticated users can perform in vulnerable versions of lakeFS includes sending requests to delete-objects through the s3 gateway and deleting files they are not authorized to delete.",
+      "correct": true,
+      "citations_accurate": false,
+      "retrieved_document_ids": [
+        "GHSA-28q9-9c3g-v3f9",
+        "GHSA-mv7p-34fv-4874"
+      ]
+    }
+  },
+  {
+    "question_id": "q3",
+    "question": "What type of vulnerability affects Caddy v2.4 in CVE-2022-29718?",
+    "question_type": "factoid",
+    "no_retrieval": {
+      "answer": "Caddy v2.4 in CVE-2022-29718 is affected by a buffer overflow vulnerability.",
+      "correct": false,
+      "manual_correct": null
+    },
+    "bm25": {
+      "answer": "Open redirect in caddy",
+      "correct": true,
+      "citations_accurate": false,
+      "retrieved_document_ids": [
+        "GHSA-2927-hv3p-f3vp"
+      ]
+    },
+    "dense": {
+      "answer": "Open redirect in caddy",
+      "correct": true,
+      "citations_accurate": false,
+      "retrieved_document_ids": [
+        "GHSA-2927-hv3p-f3vp",
+        "GO-2024-2560",
+        "GHSA-c6mx-3fj9-9j7q"
+      ]
+    }
+  },
+  {
+    "question_id": "q4",
+    "question": "Which two Venice functions are affected by the partial path traversal vulnerability?",
+    "question_type": "factoid",
+    "no_retrieval": {
+      "answer": "The two Venice functions that are affected by the partial path traversal vulnerability are `http::path::match` and `http::path::replace`.",
+      "correct": false,
+      "manual_correct": null
+    },
+    "bm25": {
+      "answer": "Based on the information provided:\n\n1. The two Venice functions affected by the partial path traversal vulnerability are:\n   - `load-file`\n   - `load-resource`\n\nSo the answer is:\n\n1. Load-file\n2. Load-resource",
+      "correct": true,
+      "citations_accurate": false,
+      "retrieved_document_ids": [
+        "GHSA-4mmh-5vw7-rgvj"
+      ]
+    },
+    "dense": {
+      "answer": "Based on the information provided:\n\n1. The two Venice functions affected by the partial path traversal vulnerability are:\n   - `load-file`\n   - `load-resource`\n\nSo the answer is:\n\n1. Load-file\n2. Load-resource",
+      "correct": true,
+      "citations_accurate": false,
+      "retrieved_document_ids": [
+        "GHSA-4mmh-5vw7-rgvj"
+      ]
+    }
+  },
+  {
+    "question_id": "q5",
+    "question": "What vulnerability affects Jenkins Nested View Plugin 1.20 and earlier?",
+    "question_type": "factoid",
+    "no_retrieval": {
+      "answer": "The Jenkins Nested View Plugin 1.20 and earlier versions may be vulnerable to SQL injection attacks. This is because the plugin uses a parameterized query for nested views, which can be exploited if the input data contains malicious SQL code. To mitigate this risk, it's recommended to use prepared statements or parameterized queries whenever possible.",
+      "correct": false,
+      "manual_correct": null
+    },
+    "bm25": {
+      "answer": "Vulnerability affects Jenkins Nested View Plugin 1.20 and earlier.",
+      "correct": false,
+      "citations_accurate": false,
+      "retrieved_document_ids": [
+        "GHSA-5wc4-w63v-97c3"
+      ]
+    },
+    "dense": {
+      "answer": "Vulnerability affects Jenkins Nested View Plugin 1.20 and earlier.",
+      "correct": false,
+      "citations_accurate": false,
+      "retrieved_document_ids": [
+        "GHSA-5wc4-w63v-97c3",
+        "GHSA-43ph-42gv-7965",
+        "GHSA-6wh8-mr6f-6cx2"
+      ]
+    }
+  },
+  {
+    "question_id": "q6",
+    "question": "What causes the denial of service in Apache Tomcat versions 5.5.0 through 5.5.11?",
+    "question_type": "factoid",
+    "no_retrieval": {
+      "answer": "Apache Tomcat's Denial of Service (DoS) attacks can be caused by various factors such as excessive network traffic, resource exhaustion, or vulnerabilities in the application code. The specific cause may vary depending on the version and configuration of the server. For example, if the server is running out of memory, it could lead to DoS attacks. Additionally, if there are security vulnerabilities in the application",
+      "correct": false,
+      "manual_correct": null
+    },
+    "bm25": {
+      "answer": "Apache Tomcat vulnerabilities allow remote attackers to cause a denial of service (CPU consumption) when listing a web directory with a large number of files. This is due to a flaw in the way the application handles concurrent requests. The fix addresses this issue by ensuring that each request is processed independently and does not consume excessive CPU resources simultaneously.",
+      "correct": false,
+      "citations_accurate": false,
+      "retrieved_document_ids": [
+        "GHSA-8f4w-jwqv-5cxc"
+      ]
+    },
+    "dense": {
+      "answer": "Apache Tomcat vulnerabilities allow remote attackers to cause a denial of service (CPU consumption) by listing a web directory with a large number of files.",
+      "correct": false,
+      "citations_accurate": false,
+      "retrieved_document_ids": [
+        "GHSA-8f4w-jwqv-5cxc",
+        "GHSA-f4qf-m5gf-8jm8",
+        "GHSA-p26v-97vp-jcx6"
+      ]
+    }
+  },
+  {
+    "question_id": "q7",
+    "question": "What attack can allow local users to write arbitrary files in NumPy versions before 1.8.1?",
+    "question_type": "factoid",
+    "no_retrieval": {
+      "answer": "The attack that allows local users to write arbitrary files in NumPy versions before 1.8.1 is called a \"buffer overflow\" or \"file descriptor injection.\" This vulnerability occurs when an attacker writes code that overwrites the file descriptor of a process with a large number of bytes, allowing them to execute arbitrary code on the system.",
+      "correct": false,
+      "manual_correct": null
+    },
+    "bm25": {
+      "answer": "Numpy arbitrary file write via symlink attack",
+      "correct": true,
+      "citations_accurate": false,
+      "retrieved_document_ids": [
+        "GHSA-2fc2-6r4j-p65h"
+      ]
+    },
+    "dense": {
+      "answer": "Numpy arbitrary file write via symlink attack",
+      "correct": true,
+      "citations_accurate": false,
+      "retrieved_document_ids": [
+        "GHSA-2fc2-6r4j-p65h",
+        "PYSEC-2024-213"
+      ]
+    }
+  },
+  {
+    "question_id": "q8",
+    "question": "How can users remediate the remote code execution vulnerability in Apache Airflow's Docker provider?",
+    "question_type": "factoid",
+    "no_retrieval": {
+      "answer": "To remediate the remote code execution (RCE) vulnerability in Apache Airflow's Docker provider, you should ensure that the Docker image is properly signed and trusted. This involves using a trusted Docker registry or signing the Docker image with a valid certificate. Additionally, you should verify that the Docker client being used has the necessary permissions to access the Docker daemon and its services. It's also important to regularly",
+      "correct": false,
+      "manual_correct": null
+    },
+    "bm25": {
+      "answer": "To remediate the remote code execution vulnerability in Apache Airflow's Docker provider, users should:\n\n1. **Disable Loading Example DAGs**: Ensure that no examples of the problematic DAG are loaded into the Docker container.\n2. **Upgrade Apache Airflow Providers**: Upgrade both the Apache Airflow ODBC Provider and the Apache Airflow MSSQL Provider to their latest stable versions.\n3. **Check Dependencies**: Verify that all dependencies are up-to-date and compatible with the new versions of the providers.\n4. **Update Configuration**: Review and update any configuration files related to the Docker containers where the provider is used.\n5. **Review Code**: Check the source code of the Docker containers to ensure there are no vulnerabilities present that could be exploited.\n\nBy following these steps, users can mitigate the risk associated with this remote code execution vulnerability in Apache Airflow's Docker provider.",
+      "correct": true,
+      "citations_accurate": false,
+      "retrieved_document_ids": [
+        "GHSA-746v-hfh2-xphm",
+        "GHSA-q57w-826p-46jr"
+      ]
+    },
+    "dense": {
+      "answer": "To remediate the remote code execution vulnerability in Apache Airflow's Docker provider, users should disable loading of example DAGs or upgrade the Apache Airflow providers Docker package to version 3.0.0 or higher.",
+      "correct": true,
+      "citations_accurate": false,
+      "retrieved_document_ids": [
+        "GHSA-746v-hfh2-xphm",
+        "PYSEC-2022-42982",
+        "PYSEC-2024-14"
+      ]
+    }
+  },
+  {
+    "question_id": "q9",
+    "question": "Which shell is affected by shescape's home-directory exposure vulnerability?",
+    "question_type": "factoid",
+    "no_retrieval": {
+      "answer": "The shell affected by shescape's home-directory exposure vulnerability is the Bourne shell (sh).",
+      "correct": false,
+      "manual_correct": null
+    },
+    "bm25": {
+      "answer": "Other tested shells, such as Dash and Zsh, are not affected.",
+      "correct": false,
+      "citations_accurate": false,
+      "retrieved_document_ids": [
+        "GHSA-cr84-xvw4-qx3c",
+        "GHSA-446w-rrm4-r47f"
+      ]
+    },
+    "dense": {
+      "answer": "Dash and Zsh are affected by shescape's home-directory exposure vulnerability.",
+      "correct": false,
+      "citations_accurate": false,
+      "retrieved_document_ids": [
+        "GHSA-446w-rrm4-r47f",
+        "PYSEC-2026-402",
+        "GHSA-cr84-xvw4-qx3c"
+      ]
+    }
+  },
+  {
+    "question_id": "q10",
+    "question": "What workaround is recommended for the node-saml signature-bypass vulnerability?",
+    "question_type": "factoid",
+    "no_retrieval": {
+      "answer": "The recommended workaround for the node-saml signature-bypass vulnerability is to use a certificate authority (CA) that supports SAML 2.0 and has a trusted root CA. This can help mitigate the issue by ensuring that the client's identity is verified against a trusted root CA.",
+      "correct": false,
+      "manual_correct": null
+    },
+    "bm25": {
+      "answer": "Disable SAML authentication.",
+      "correct": true,
+      "citations_accurate": false,
+      "retrieved_document_ids": [
+        "GHSA-5p8w-2mvw-38pv",
+        "GHSA-m837-g268-mmv7"
+      ]
+    },
+    "dense": {
+      "answer": "Disable SAML authentication.",
+      "correct": true,
+      "citations_accurate": false,
+      "retrieved_document_ids": [
+        "GHSA-5p8w-2mvw-38pv",
+        "GHSA-m837-g268-mmv7",
+        "GHSA-3p62-6fjh-3p5h"
+      ]
+    }
+  },
+  {
+    "question_id": "q11",
+    "question": "Which versions fix the Caddy open redirect and the Venice partial path traversal vulnerabilities?",
+    "question_type": "multi-hop",
+    "bm25": {
+      "answer": "To address the issues identified in the advisory:\n\n1. **Caddy v2.5.0**\n   - The vulnerability in Caddy v2.4 has been addressed in Caddy v2.5.0.\n\n2. **Venice v1.10.17**\n   - The vulnerability in Venice has been fixed in Venice v1.10.17.\n\nThese updates will mitigate the impact of the vulnerabilities described in the advisory.",
+      "correct": true,
+      "citations_accurate": false,
+      "retrieved_document_ids": [
+        "GHSA-4mmh-5vw7-rgvj",
+        "GHSA-2927-hv3p-f3vp"
+      ]
+    },
+    "dense": {
+      "answer": "To address the Caddy open redirect vulnerability, we need to update the package to version 2.5.0. To resolve the partial path traversal vulnerability, we should ensure that the load paths are correctly configured and updated as per the given guidelines.",
+      "correct": false,
+      "citations_accurate": false,
+      "retrieved_document_ids": [
+        "GHSA-2927-hv3p-f3vp",
+        "GO-2024-2560",
+        "GHSA-4mmh-5vw7-rgvj"
+      ]
+    }
+  },
+  {
+    "question_id": "q12",
+    "question": "What are the security impacts and fixed versions for the lakeFS and shescape vulnerabilities?",
+    "question_type": "multi-hop",
+    "bm25": {
+      "answer": "The lakeFS vulnerability affects authenticated users who can send requests to delete-objects through the s3 gateway and delete files they are not authorized to delete. The fix is available in lakeFS version 0.82.0 and later. \n\nThe shescape vulnerability exposes the home directory on Unix systems when using Bash with the `escape` or `escapeAll` functions from the _shescape_ API with the `interpolation` option set to `true`. This vulnerability is present in both versions of shescape (v1.5.1 and later).\n\nFor more information, please refer to the following references:\n\n- LakeFS Security Advisory: [https://github.com/treeverse/lakeFS/security/advisories/LAKEFS-2022-1019](https://github.com/treeverse/lakeFS/security/advisories/LAKEFS-2022-1019)\n- GitHub Issue: [https://github.com/ericcornelissen/shescape/issues/169](https://github.com/ericcornelissen/shescape/issues/169)\n\nThe lakeFS vulnerability is fixed in version 0.82.0 and later, while the shescape vulnerability is fixed in version 1.5.1.",
+      "correct": true,
+      "citations_accurate": false,
+      "retrieved_document_ids": [
+        "GHSA-cr84-xvw4-qx3c",
+        "GHSA-28q9-9c3g-v3f9",
+        "GHSA-446w-rrm4-r47f"
+      ]
+    },
+    "dense": {
+      "answer": "The lakeFS vulnerability is described as being vulnerable to authenticated users deleting files they are not authorized to delete. The severity level is \"High\", indicating it poses a significant risk to system integrity and availability.\n\nThe seaweedfs vulnerability is described as being vulnerable to SQL injection. The severity level is also \"High\", indicating it poses a significant risk to system integrity and availability.\n\nFor both lakeFS and seaweedfs, the fixed versions are indicated as \"0.0.0-20240625155419-9ac102336200\". This indicates that these vulnerabilities were patched in the latest version of the respective libraries, ensuring that the systems remain secure against future attacks.",
+      "correct": false,
+      "citations_accurate": false,
+      "retrieved_document_ids": [
+        "GHSA-28q9-9c3g-v3f9",
+        "GHSA-6g23-24mc-hx6x",
+        "GHSA-q97m-8853-pq76"
+      ]
+    }
+  },
+  {
+    "question_id": "q13",
+    "question": "Which version fixes CVE-2099-99999?",
+    "question_type": "unanswerable",
+    "bm25": {
+      "answer": "I don't know",
+      "correct": true,
+      "citations_accurate": true,
+      "retrieved_document_ids": []
+    },
+    "dense": {
+      "answer": "I don't know",
+      "correct": true,
+      "citations_accurate": true,
+      "retrieved_document_ids": []
+    }
+  },
+  {
+    "question_id": "q14",
+    "question": "What vulnerability affects the package example-security-widget?",
+    "question_type": "unanswerable",
+    "bm25": {
+      "answer": "I don't know",
+      "correct": true,
+      "citations_accurate": true,
+      "retrieved_document_ids": []
+    },
+    "dense": {
+      "answer": "I don't know",
+      "correct": true,
+      "citations_accurate": true,
+      "retrieved_document_ids": []
+    }
+  }
+]

@@ -15,6 +15,7 @@ from src.evaluation.evaluation_metrics import EvaluationMetrics
 PROJECT_ROOT = Path(__file__).parent.parent
 DATA_DIR = PROJECT_ROOT / "data" / "processed"
 EVAL_DIR = PROJECT_ROOT / "src" / "evaluation"
+RESULTS_FILE = PROJECT_ROOT / "evaluation_results.json"
 
 def load_evaluation_set():
     """Load evaluation questions"""
@@ -24,40 +25,27 @@ def load_evaluation_set():
 
 def setup_system():
     """Initialize retrieval and LLM systems"""
-    print("=" * 60)
-    print("SETTING UP RAG SYSTEM")
-    print("=" * 60)
-    
     # Load corpus
-    print("\n1. Loading corpus...")
     corpus_path = DATA_DIR / "advisories.jsonl"
     records = load_bm25_corpus(corpus_path)
-    print(f"   ✓ Loaded {len(records)} advisories")
-    
+
     # Setup BM25
     print("\n2. Setting up BM25 retriever...")
     bm25 = BM25Retriever()
     bm25.build_index(records)
-    print("   ✓ BM25 index built")
-    
+
     # Setup Dense Retriever
     print("\n3. Setting up Dense retriever...")
     dense = DenseRetriever()
     dense.build_index(records)
-    print("   ✓ Dense index built")
-    
+
     # Setup LLM
     print("\n4. Loading LLM (this takes 2-3 minutes on first run)...")
     try:
         llm = HuggingFaceLLM()
-        print("   ✓ LLM loaded")
     except Exception as e:
         print(f"   ✗ LLM Error: {e}")
         return None, None, None, None
-    
-    print("\n" + "=" * 60)
-    print("✓ SYSTEM READY")
-    print("=" * 60)
     
     return bm25, dense, llm, records
 
@@ -88,12 +76,14 @@ def test_single_query(question, bm25, dense, llm):
 
 def run_full_evaluation(bm25, dense, llm):
     """Run evaluation on all test questions"""
-    print("\n" + "=" * 60)
-    print("RUNNING FULL EVALUATION")
-    print("=" * 60)
     
     evaluation_set = load_evaluation_set()
     metrics = EvaluationMetrics()
+    if RESULTS_FILE.exists():
+        with open(RESULTS_FILE) as f:
+            saved_results = {item["question_id"]: item for item in json.load(f)}
+    else:
+        saved_results = {}
     
     bm25_results = []
     dense_results = []
@@ -112,40 +102,65 @@ def run_full_evaluation(bm25, dense, llm):
             result['bm25']['answer'],
             question_item['ground_truth_answer'],
             question_item['question_type'],
-            question_item['ground_truth_chunk_ids']
+            question_item['ground_truth_chunk_ids'],
+            question_item.get('required_answer_terms'),
+            question_item.get('forbidden_answer_terms')
         )
         
         dense_eval = metrics.evaluate_answer(
             result['dense']['answer'],
             question_item['ground_truth_answer'],
             question_item['question_type'],
-            question_item['ground_truth_chunk_ids']
+            question_item['ground_truth_chunk_ids'],
+            question_item.get('required_answer_terms'),
+            question_item.get('forbidden_answer_terms')
         )
         
         bm25_results.append(bm25_eval)
         dense_results.append(dense_eval)
+
+        saved_result = saved_results.get(question_item["question_id"], {})
+        saved_result.update({
+            "question_id": question_item["question_id"],
+            "question": question_item["question"],
+            "question_type": question_item["question_type"],
+            "bm25": {
+                "answer": result["bm25"]["answer"],
+                "correct": bm25_eval["correct"],
+                "citations_accurate": bm25_eval["citations_accurate"],
+                "retrieved_document_ids": [item["document_id"] for item in result["bm25"]["retrieved_chunks"]]
+            },
+            "dense": {
+                "answer": result["dense"]["answer"],
+                "correct": dense_eval["correct"],
+                "citations_accurate": dense_eval["citations_accurate"],
+                "retrieved_document_ids": [item["document_id"] for item in result["dense"]["retrieved_chunks"]]
+            }
+        })
+        saved_results[question_item["question_id"]] = saved_result
         
         # Print status
         bm25_status = "✓" if bm25_eval["correct"] else "✗"
         dense_status = "✓" if dense_eval["correct"] else "✗"
         print(f"  BM25: {bm25_status} | Dense: {dense_status}")
-    
-    # Print summary
-    print("\n" + "=" * 60)
-    print("EVALUATION SUMMARY")
-    print("=" * 60)
+
+    ordered_results = [saved_results[item["question_id"]] for item in evaluation_set]
+    with open(RESULTS_FILE, "w") as f:
+        json.dump(ordered_results, f, indent=2)
     
     bm25_stats = metrics.aggregate_results(bm25_results)
     dense_stats = metrics.aggregate_results(dense_results)
     
     print(f"\nBM25 Results:")
     print(f"  Accuracy: {bm25_stats['accuracy']:.1%} ({bm25_stats['correct_answers']}/{bm25_stats['total_questions']})")
+    print(f"  Factoid Accuracy: {bm25_stats['breakdown']['factoid']['accuracy']:.1%} ({bm25_stats['breakdown']['factoid']['correct']}/{bm25_stats['breakdown']['factoid']['count']})")
     print(f"  Citation Accuracy: {bm25_stats['citation_accuracy']:.1%}")
     if bm25_stats['breakdown']['unanswerable']['count'] > 0:
         print(f"  'I don't know' Accuracy: {bm25_stats['idontknow_accuracy']:.1%}")
     
     print(f"\nDense Retrieval Results:")
     print(f"  Accuracy: {dense_stats['accuracy']:.1%} ({dense_stats['correct_answers']}/{dense_stats['total_questions']})")
+    print(f"  Factoid Accuracy: {dense_stats['breakdown']['factoid']['accuracy']:.1%} ({dense_stats['breakdown']['factoid']['correct']}/{dense_stats['breakdown']['factoid']['count']})")
     print(f"  Citation Accuracy: {dense_stats['citation_accuracy']:.1%}")
     if dense_stats['breakdown']['unanswerable']['count'] > 0:
         print(f"  'I don't know' Accuracy: {dense_stats['idontknow_accuracy']:.1%}")
@@ -154,14 +169,12 @@ def run_full_evaluation(bm25, dense, llm):
     print(f"\nComparison:")
     diff = (dense_stats['accuracy'] - bm25_stats['accuracy']) * 100
     print(f"  Dense vs BM25: {diff:+.1f}% accuracy")
+    print(f"  Results saved to: {RESULTS_FILE}")
     
     return bm25_results, dense_results
 
 def interactive_demo(bm25, dense, llm):
     """Interactive Q&A demo"""
-    print("\n" + "=" * 60)
-    print("INTERACTIVE DEMO")
-    print("=" * 60)
     print("Ask questions about vulnerabilities. Type 'exit' to quit.\n")
     
     pipeline = RAGPipeline(bm25, dense, llm)
@@ -199,7 +212,6 @@ def main():
     
     # Test setup only
     if args.test_setup:
-        print("\n✓ All systems ready!")
         return
     
     # Test single query
