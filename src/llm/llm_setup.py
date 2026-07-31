@@ -1,18 +1,28 @@
+from src.reproducibility import DEVICE
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 
+MODEL_NAME = "Qwen/Qwen2.5-0.5B-Instruct"
+MODEL_REVISION = "7ae557604adf67be50417f59c2c2f167def9a775"
+
 class HuggingFaceLLM:
-    def __init__(self, model_name='Qwen/Qwen2.5-0.5B-Instruct'):
+    def __init__(self, model_name=MODEL_NAME, model_revision=MODEL_REVISION):
         """Initialize with a very small, fast model"""
         self.model_name = model_name
+        self.model_revision = model_revision
         
         print(f"Loading model: {model_name}...")
         
         try:
-            self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+            self.tokenizer = AutoTokenizer.from_pretrained(model_name, revision=model_revision)
             self.tokenizer.pad_token = self.tokenizer.eos_token
             
-            self.model = AutoModelForCausalLM.from_pretrained(model_name)
+            self.model = AutoModelForCausalLM.from_pretrained(
+                model_name,
+                revision=model_revision,
+                dtype=torch.float32
+            ).to(DEVICE)
+            self.model.eval()
             print(f"✓ Model loaded successfully")
         except Exception as e:
             print(f"✗ Error loading model: {e}")
@@ -33,6 +43,7 @@ class HuggingFaceLLM:
                 truncation=True,
                 max_length=16384
             )
+            inputs = {key: value.to(DEVICE) for key, value in inputs.items()}
             
             with torch.no_grad():
                 outputs = self.model.generate(
