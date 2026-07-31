@@ -1,65 +1,70 @@
 import json
 from pathlib import Path
 from llm.llm_setup import HuggingFaceLLM
+from evaluation.evaluation_metrics import EvaluationMetrics
 
-diagnostic_questions = [
-    "What is CVE-2020-29244?",
-    "Which Go package had an out-of-bounds read vulnerability?",
-    "What is GHSA-28q9-9c3g-v3f9?",
-    "What ecosystem has npm advisories?",
-    "What does BM25 stand for?",
-    "How many advisories are in the corpus?",
-    "What is lakeFS?",
-    "When was the dhowden tag vulnerability published?",
-    "What is the fix for the dhowden tag panic?",
-    "Which package manager is related to Python?"
-]
+evaluation_file = Path("src/evaluation/evaluation_set.json")
+with open(evaluation_file) as f:
+    evaluation_set = json.load(f)
 
-print("=" * 60)
-print("DIAGNOSTIC TEST: LLM WITHOUT RETRIEVED CONTEXT")
-print("=" * 60)
+diagnostic_items = [item for item in evaluation_set if item["question_type"] == "factoid"]
 
 llm = HuggingFaceLLM()
+metrics = EvaluationMetrics()
+output_file = Path("evaluation_results.json")
+if output_file.exists():
+    with open(output_file) as f:
+        saved_results = {item["question_id"]: item for item in json.load(f)}
+else:
+    saved_results = {}
 
-print("\nLoading LLM...")
-print("Testing questions WITHOUT any retrieved context\n")
-
-results = []
-
-for i, q in enumerate(diagnostic_questions, 1):
+for i, question_item in enumerate(diagnostic_items, 1):
+    q = question_item["question"]
     print(f"[{i}/10] Q: {q}")
     
     try:
-        # Generate answer with timeout and error handling
-        answer = llm.generate(q, max_tokens=80, temperature=0.5)
+        diagnostic_prompt = f"""Answer the question briefly.
+If you do not know, say "I don't know."
+
+Question: {q}
+Answer:"""
+        answer = llm.generate(diagnostic_prompt, max_tokens=80, temperature=0.0)
         
         if answer and len(answer.strip()) > 0:
-            result_text = answer[:120]
+            result_text = answer
         else:
             result_text = "No answer generated"
             
     except Exception as e:
         result_text = f"Error: {str(e)[:50]}"
     
-    result = {
+    evaluation = metrics.evaluate_answer(
+        result_text,
+        question_item["ground_truth_answer"],
+        question_item["question_type"],
+        [],
+        question_item.get("required_answer_terms"),
+        question_item.get("forbidden_answer_terms")
+    )
+    saved_result = saved_results.get(question_item["question_id"], {})
+    manual_correct = saved_result.get("no_retrieval", {}).get("manual_correct")
+    saved_result.update({
+        "question_id": question_item["question_id"],
         "question": q,
-        "answer": result_text,
-        "manual_correct": None  # You fill this in manually
-    }
-    results.append(result)
+        "question_type": question_item["question_type"],
+        "no_retrieval": {
+            "answer": result_text,
+            "correct": evaluation["correct"],
+            "manual_correct": manual_correct
+        }
+    })
+    saved_results[question_item["question_id"]] = saved_result
     print(f"    A: {result_text}\n")
 
-# Save results for manual review
-output_file = Path("diagnostic_results.json")
+results = [saved_results[item["question_id"]] for item in evaluation_set if item["question_id"] in saved_results]
 with open(output_file, "w") as f:
     json.dump(results, f, indent=2)
 
-print("=" * 60)
+automatic_correct = sum(saved_results[item["question_id"]]["no_retrieval"]["correct"] for item in diagnostic_items)
+print(f"Automatic accuracy: {automatic_correct}/{len(diagnostic_items)} ({automatic_correct / len(diagnostic_items):.1%})")
 print(f"Results saved to: {output_file}")
-print("=" * 60)
-print("\n📝 NEXT STEP:")
-print("1. Open diagnostic_results.json")
-print("2. For each answer, manually add 'manual_correct': true or false")
-print("3. Count total correct answers")
-print("4. Report in your project: 'Without retrieval: X/10 correct'")
-print("5. Compare to WITH retrieval: 12/15 (80%) to show improvement")

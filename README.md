@@ -1,195 +1,156 @@
 # SupplyGuard
 
-SupplyGuard is a retrieval augmented software supply chain vulnerability triage system. It retrieves open source security advisories and produces evidence grounded answers about affected packages, vulnerable versions, available fixes, impact, and remediation.
+SupplyGuard is a retrieval-augmented generation system for answering questions about open-source software security advisories. It compares classical BM25 retrieval with dense semantic retrieval while using the same local language model and evaluation set for both systems.
 
-## Current Project Status
+## System Overview
 
-The following components are currently implemented:
+The project includes:
 
-- OSV advisory corpus inspection
-- Corpus filtering and preprocessing
-- Reproducible sampling of 1000 advisories
-- Technical text tokenization
+- a reproducibly sampled corpus of 1,000 OSV advisories
 - BM25 keyword retrieval
-- Command line BM25 search
+- dense retrieval using `all-MiniLM-L6-v2`
+- local answer generation using `Qwen/Qwen2.5-0.5B-Instruct`
+- inline advisory citation instructions
+- relevance filtering and insufficient-context abstention
+- a no-retrieval diagnostic baseline
+- factoid, multi-hop, and unanswerable evaluation questions
+- shared automatic answer grading
 
-## Data Source
+Both RAG systems use the same corpus, Qwen model, prompt, generation settings, and evaluation questions. They differ only in the retrieval method.
 
-SupplyGuard uses official vulnerability records from the [OSV database](https://osv.dev/).
+## Repository Structure
 
-The corpus includes advisories from four software ecosystems:
-
-- npm
-- Maven
-- Go
-- PyPI
-
-## Downloading the Raw OSV Data
-
-OSV provides each ecosystem as an `all.zip` archive containing its vulnerability records.
-
-Download the four archives:
-
-- [npm advisories](https://storage.googleapis.com/osv-vulnerabilities/npm/all.zip)
-- [Maven advisories](https://storage.googleapis.com/osv-vulnerabilities/Maven/all.zip)
-- [Go advisories](https://storage.googleapis.com/osv-vulnerabilities/Go/all.zip)
-- [PyPI advisories](https://storage.googleapis.com/osv-vulnerabilities/PyPI/all.zip)
-
-Place and rename the downloaded files as follows:
-
-```
-data/raw/
-├── npm.zip
-├── Maven.zip
-├── Go.zip
-└── PyPI.zip
-```
-
-The raw archives are excluded from Git because they are large and may change as OSV is updated.
-
-The processed corpus and manifest preserve the exact 1000 advisories used by the project.
-
-## Corpus Construction
-
-The preprocessing pipeline keeps advisories that:
-
-- are not intentional malware records beginning with `MAL-`
-- have not been withdrawn
-- were published between January 1, 2022 and July 21, 2026
-- contain at least one affected package
-- contain either a summary or detailed description
-
-Valid advisories are grouped by ecosystem and publication year.
-
-The pipeline selects:
-
-- 50 advisories per year
-- 5 years from 2022 through 2026
-- 4 ecosystems
-
-This creates a balanced corpus of:
-
-```
-50 × 5 × 4 = 1000 advisories
-```
-
-Sampling uses the fixed random seed `42`.
-
-Candidates are sorted by advisory ID before sampling to ensure reproducible results.
-
-## Processed Files
-
-The preprocessing pipeline generates:
-
-```
+```text
 data/processed/
-├── advisories.jsonl
-└── corpus_manifest.json
+  advisories.jsonl
+  corpus_manifest.jsonl
+src/
+  diagnostic_test.py
+  preprocess.py
+  test_rag_system.py
+  evaluation/
+    evaluation_metrics.py
+    evaluation_set.json
+  llm/
+    answer_generation.py
+    llm_setup.py
+    prompt_template.py
+  retrieval/
+    bm25.py
+    dense_retrieval.py
+    tokenizer.py
+evaluation_results.json
+requirements.txt
 ```
 
-### `advisories.jsonl`
+## Setup
 
-Each line contains one normalized advisory with fields including:
-
-- document ID
-- chunk ID
-- advisory ID
-- aliases
-- ecosystem
-- affected packages
-- summary
-- details
-- affected version ranges
-- fixed versions
-- severity
-- publication date
-- references
-- retrieval text
-
-The `retrieval_text` field combines the advisory information that should be searchable by the retrieval systems.
-
-### `corpus_manifest.json`
-
-The corpus manifest records:
-
-- random seed
-- publication date range
-- included years
-- number of samples per year
-- total number of documents
-- selected advisory IDs
-- ecosystem and publication year for each advisory
-
-## Running the Project
-
-Run all commands from the project root:
-
-```
-CP423-Final-Project/
-```
-
-The project currently uses Python 3.12.
-
-Depending on the system configuration, `python` may need to be replaced with `python3` or the full path to Python 3.12.
-
-### 1. Inspect the Raw Dataset
-
-The inspection script reports statistics about each raw OSV archive.
-
-Run:
+SupplyGuard requires Python 3.12 or later. Run commands from the repository root.
 
 ```bash
-python -m src.data_inspection
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
-The script reports:
+The first dense-retrieval and Qwen runs download models from Hugging Face. Later runs use the local model cache.
 
-- total JSON records
-- GHSA records
-- malicious records
-- withdrawn records
-- records within the publication date range
-- records with affected packages
-- records with descriptions
-- valid candidate records
+## Corpus
 
-The inspection script does not modify the raw data or generate the processed corpus.
+SupplyGuard uses public vulnerability records from the [OSV database](https://osv.dev/) for four ecosystems:
 
-### 2. Build the Processed Corpus
+- Go
+- Maven
+- npm
+- PyPI
 
-Run:
+The tracked processed corpus contains 1,000 advisories: 50 records per ecosystem per year for 2022 through 2026. Candidates are sorted before sampling, and sampling uses random seed `42`.
+
+Records must:
+
+- not be intentional malware advisories beginning with `MAL-`
+- not be withdrawn
+- have a publication date from January 1, 2022 through July 21, 2026
+- identify at least one affected package
+- include a summary or detailed description
+
+Each processed record contains an advisory ID, chunk ID, aliases, ecosystem, package metadata, descriptions, affected ranges, fixed versions, severity, dates, references, and searchable retrieval text.
+
+### Rebuilding the Corpus
+
+The processed corpus is already tracked. To rebuild it, download the OSV `all.zip` archives:
+
+- [Go](https://storage.googleapis.com/osv-vulnerabilities/Go/all.zip)
+- [Maven](https://storage.googleapis.com/osv-vulnerabilities/Maven/all.zip)
+- [npm](https://storage.googleapis.com/osv-vulnerabilities/npm/all.zip)
+- [PyPI](https://storage.googleapis.com/osv-vulnerabilities/PyPI/all.zip)
+
+Store them with these exact names:
+
+```text
+data/raw/
+  go.zip
+  Maven.zip
+  npm.zip
+  pypi.zip
+```
+
+Inspect the archives:
+
+```bash
+python src/data_inspection.py
+```
+
+Rebuild the processed files:
 
 ```bash
 python -m src.preprocess
 ```
 
-The preprocessing script:
+This writes:
 
-1. Opens each OSV ZIP archive.
-2. Reads the JSON vulnerability records.
-3. Applies the advisory validation rules.
-4. Groups valid advisories by ecosystem and year.
-5. selects 50 advisories from every ecosystem and year.
-6. Normalizes the selected records.
-7. Builds the searchable `retrieval_text` field.
-8. Writes the processed corpus and manifest.
-
-Expected output:
-
-```
-Saved 1000 processed advisories
-```
-
-Generated files:
-
-```
+```text
 data/processed/advisories.jsonl
-data/processed/corpus_manifest.json
+data/processed/corpus_manifest.jsonl
 ```
 
-### 3. Run BM25 Retrieval
+## Retrieval and Generation
 
-Run a BM25 search from the project root:
+BM25 uses `k1=1.5` and `b=0.75`. Dense retrieval uses normalized `all-MiniLM-L6-v2` embeddings and cosine similarity.
+
+The pipeline initially retrieves five records, then applies method-specific relevance filtering:
+
+- BM25 minimum score: `10.0`
+- dense minimum cosine similarity: `0.44`
+- BM25 relative score cutoff: `65%` of the top score
+- dense relative score cutoff: `70%` of the top score
+- maximum context records: `3`
+
+Questions containing explicit CVE, GHSA, GO, or package identifiers must match the retrieved evidence. When no evidence qualifies, the system returns `I don't know` without calling the LLM.
+
+Qwen receives the complete retrieval text of qualifying records and generates deterministically with sampling disabled.
+
+## Running SupplyGuard
+
+Check that the corpus, retrievers, and model load:
+
+```bash
+python src/test_rag_system.py --test-setup
+```
+
+Ask one question using both retrievers:
+
+```bash
+python src/test_rag_system.py --query "Which version fixes the vulnerability in github.com/dhowden/tag?"
+```
+
+Run an interactive dense-retrieval demo:
+
+```bash
+python src/test_rag_system.py --demo
+```
+
+Run BM25 without answer generation:
 
 ```bash
 python -m src.retrieval.bm25 \
@@ -197,20 +158,44 @@ python -m src.retrieval.bm25 \
   --top_k 5
 ```
 
-The command returns the top-ranked advisory records with:
+## Evaluation
 
-- rank
-- BM25 score
-- document ID
-- chunk ID
-- advisory summary
+The gold evaluation set contains 14 questions:
 
-Example result:
+- 10 factoid questions
+- 2 multi-hop questions
+- 2 unanswerable questions
 
+The same ten factoid questions are used for the no-retrieval diagnostic, which makes factual accuracy directly comparable across no retrieval, BM25, and dense retrieval.
+
+Run the no-retrieval baseline:
+
+```bash
+python -u src/diagnostic_test.py
 ```
-Rank: 1
-Score: 12.7738
-Document ID: GHSA-27mh-3343-6hg5
-Chunk ID: GHSA-27mh-3343-6hg5_chunk_0
-Summary: dhowden tag panic due to out-of-bounds read
+
+Run BM25 and dense RAG evaluation:
+
+```bash
+python -u src/test_rag_system.py --evaluate all
 ```
+
+Both commands merge their outputs into `evaluation_results.json`. The file stores each question ID, generated answers, correctness labels, citation-accuracy labels, and retrieved document IDs for the available conditions.
+
+### Current Results
+
+| Condition | Shared factoids | Full evaluation | Unanswerable |
+|---|---:|---:|---:|
+| No retrieval | 0/10 (0%) | N/A | N/A |
+| BM25 RAG | 7/10 (70%) | 10/14 (71.4%) | 2/2 (100%) |
+| Dense RAG | 7/10 (70%) | 9/14 (64.3%) | 2/2 (100%) |
+
+The current results show that retrieval substantially improves factual accuracy over the local model alone. BM25 currently performs better on the two multi-hop questions because it retains both required advisories more reliably.
+
+## Known Limitations
+
+- Qwen 0.5B sometimes extracts the wrong fact even when retrieval finds the correct advisory.
+- Generated answers do not yet follow the inline citation instruction consistently.
+- Dense retrieval currently misses one required advisory for a multi-hop question.
+- Relevance thresholds should be calibrated on a separate development set before final reporting.
+- Long retrieved records still require a total token-budget policy for arbitrary user queries.
