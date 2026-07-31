@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What is CVE-2020-29244?",
+    "answer": "No answer generated",
+    "manual_correct": null
+  },
+  {
+    "question": "Which Go package had an out-of-bounds read vulnerability?",
+    "answer": "No answer generated",
+    "manual_correct": null
+  },
+  {
+    "question": "What is GHSA-28q9-9c3g-v3f9?",
+    "answer": "No answer generated",
+    "manual_correct": null
+  },
+  {
+    "question": "What ecosystem has npm advisories?",
+    "answer": "No answer generated",
+    "manual_correct": null
+  },
+  {
+    "question": "What does BM25 stand for?",
+    "answer": "No answer generated",
+    "manual_correct": null
+  },
+  {
+    "question": "How many advisories are in the corpus?",
+    "answer": "No answer generated",
+    "manual_correct": null
+  },
+  {
+    "question": "What is lakeFS?",
+    "answer": "No answer generated",
+    "manual_correct": null
+  },
+  {
+    "question": "When was the dhowden tag vulnerability published?",
+    "answer": "No answer generated",
+    "manual_correct": null
+  },
+  {
+    "question": "What is the fix for the dhowden tag panic?",
+    "answer": "No answer generated",
+    "manual_correct": null
+  },
+  {
+    "question": "Which package manager is related to Python?",
+    "answer": "No answer generated",
+    "manual_correct": null
+  }
+]

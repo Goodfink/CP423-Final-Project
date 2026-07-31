@@ -1,0 +1,122 @@
+[
+  {
+    "question_id": "q1",
+    "question": "Which version of github.com/dhowden/tag fixes the out-of-bounds read panic vulnerability?",
+    "ground_truth_answer": "Version 0.0.0-20201120070457-d52dcb253c63",
+    "ground_truth_chunk_ids": ["GHSA-27mh-3343-6hg5"],
+    "question_type": "factoid",
+    "difficulty": "easy"
+  },
+  {
+    "question_id": "q2",
+    "question": "What is the severity of the dhowden tag vulnerability?",
+    "ground_truth_answer": "MODERATE (CVSS score 7.5)",
+    "ground_truth_chunk_ids": ["GHSA-27mh-3343-6hg5"],
+    "question_type": "factoid",
+    "difficulty": "easy"
+  },
+  {
+    "question_id": "q3",
+    "question": "Is there a vulnerability in lakeFS related to authenticated users?",
+    "ground_truth_answer": "Yes, authenticated users can delete files they are not authorized to delete in lakeFS before version 0.82.0",
+    "ground_truth_chunk_ids": ["GHSA-28q9-9c3g-v3f9"],
+    "question_type": "factoid",
+    "difficulty": "easy"
+  },
+  {
+    "question_id": "q4",
+    "question": "What workaround exists for the lakeFS vulnerability?",
+    "ground_truth_answer": "Drop specific requests with 'Authorization' header that starts with 'AWS' at the lakeFS listen port",
+    "ground_truth_chunk_ids": ["GHSA-28q9-9c3g-v3f9"],
+    "question_type": "factoid",
+    "difficulty": "medium"
+  },
+  {
+    "question_id": "q5",
+    "question": "I don't know",
+    "ground_truth_answer": "I don't know - this is not a valid question",
+    "ground_truth_chunk_ids": [],
+    "question_type": "unanswerable",
+    "difficulty": "easy"
+  },
+  {
+    "question_id": "q6",
+    "question": "How many vulnerabilities are in the database?",
+    "ground_truth_answer": "I don't know - the corpus contains 1000 sampled advisories, not the total count",
+    "ground_truth_chunk_ids": [],
+    "question_type": "unanswerable",
+    "difficulty": "easy"
+  },
+  {
+    "question_id": "q7",
+    "question": "What type of attack vector does the dhowden tag vulnerability enable, and what is the recommended fix version?",
+    "ground_truth_answer": "It enables denial of service (DoS) attacks. Fix: upgrade to version 0.0.0-20201120070457-d52dcb253c63 or later.",
+    "ground_truth_chunk_ids": ["GHSA-27mh-3343-6hg5"],
+    "question_type": "multi-hop",
+    "difficulty": "medium"
+  },
+  {
+    "question_id": "q8",
+    "question": "What is the impact of the lakeFS vulnerability and what version fixes it?",
+    "ground_truth_answer": "Authenticated users can delete unauthorized files. Fixed in lakeFS v0.82.0 and later.",
+    "ground_truth_chunk_ids": ["GHSA-28q9-9c3g-v3f9"],
+    "question_type": "multi-hop",
+    "difficulty": "medium"
+  },
+  {
+    "question_id": "q9",
+    "question": "Which package is affected by the out-of-bounds panic and what type of vulnerability is it?",
+    "ground_truth_answer": "Package: github.com/dhowden/tag. Type: out-of-bounds read causing denial of service.",
+    "ground_truth_chunk_ids": ["GHSA-27mh-3343-6hg5"],
+    "question_type": "multi-hop",
+    "difficulty": "medium"
+  },
+  {
+    "question_id": "q10",
+    "question": "What is the primary programming language for the Go ecosystem vulnerabilities in the corpus?",
+    "ground_truth_answer": "I don't know - the corpus doesn't specify the primary language used",
+    "ground_truth_chunk_ids": [],
+    "question_type": "unanswerable",
+    "difficulty": "medium"
+  },
+  {
+    "question_id": "q11",
+    "question": "How does improper bounds checking in the dhowden tag library lead to a security risk when parsing user-supplied input?",
+    "ground_truth_answer": "Improper bounds checking allows out-of-bounds reads that trigger panics. When the library parses user-supplied input, this can be exploited as a denial of service vector.",
+    "ground_truth_chunk_ids": ["GHSA-27mh-3343-6hg5"],
+    "question_type": "multi-hop",
+    "difficulty": "hard"
+  },
+  {
+    "question_id": "q12",
+    "question": "What are all the CVE identifiers associated with the dhowden tag panic vulnerability?",
+    "ground_truth_answer": "CVE-2020-29242, CVE-2020-29243, CVE-2020-29244, CVE-2020-29245",
+    "ground_truth_chunk_ids": ["GHSA-27mh-3343-6hg5"],
+    "question_type": "factoid",
+    "difficulty": "medium"
+  },
+  {
+    "question_id": "q13",
+    "question": "When was the lakeFS authorization bypass vulnerability published?",
+    "ground_truth_answer": "September 23, 2022",
+    "ground_truth_chunk_ids": ["GHSA-28q9-9c3g-v3f9"],
+    "question_type": "factoid",
+    "difficulty": "easy"
+  },
+  {
+    "question_id": "q14",
+    "question": "What package manager ecosystems are covered in this vulnerability database?",
+    "ground_truth_answer": "I don't know - the corpus contains advisories from multiple ecosystems but doesn't provide a comprehensive overview",
+    "ground_truth_chunk_ids": [],
+    "question_type": "unanswerable",
+    "difficulty": "easy"
+  },
+  {
+    "question_id": "q15",
+    "question": "Describe both the security impact of the dhowden tag vulnerability and the affected versions, and explain what triggers the panic.",
+    "ground_truth_answer": "The vulnerability allows out-of-bounds reads in dhowden tag versions before 0.0.0-20201120070457-d52dcb253c63. When parsing user-supplied input, improper bounds checking allows attempted out-of-bounds reads that trigger a panic, enabling denial of service attacks.",
+    "ground_truth_chunk_ids": ["GHSA-27mh-3343-6hg5"],
+    "question_type": "multi-hop",
+    "difficulty": "hard"
+  }
+]
