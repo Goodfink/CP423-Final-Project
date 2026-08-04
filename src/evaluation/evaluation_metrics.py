@@ -34,7 +34,16 @@ class EvaluationMetrics:
         text = unicodedata.normalize("NFKD", text).lower()
         return " ".join(re.findall(r"[a-z0-9]+", text))
 
-    def evaluate_answer(self, generated_answer, ground_truth_answer, question_type, ground_truth_chunk_ids, required_answer_terms=None, forbidden_answer_terms=None):
+    def evaluate_answer(
+        self,
+        generated_answer,
+        ground_truth_answer,
+        question_type,
+        ground_truth_chunk_ids,
+        required_answer_terms=None,
+        forbidden_answer_terms=None,
+        require_citations=True
+    ):
         """Evaluate a single answer"""
         
         result = {
@@ -43,7 +52,8 @@ class EvaluationMetrics:
             "question_type": question_type,
             "correct": False,
             "has_appropriate_idontknow": False,
-            "citations_accurate": False,
+            "citations_accurate": False if require_citations else None,
+            "citations_required": require_citations,
             "notes": []
         }
         
@@ -56,24 +66,29 @@ class EvaluationMetrics:
             else:
                 result["notes"].append("Should have said 'I don't know'")
             
-            # Should have no citations for unanswerable
-            cited_ids = self.extract_citations(generated_answer)
-            result["citations_accurate"] = len(cited_ids) == 0
-            if len(cited_ids) > 0:
-                result["notes"].append(f"Incorrectly cited: {cited_ids}")
+            if require_citations:
+                # Should have no citations for unanswerable
+                cited_ids = self.extract_citations(generated_answer)
+                result["citations_accurate"] = len(cited_ids) == 0
+                if len(cited_ids) > 0:
+                    result["notes"].append(f"Incorrectly cited: {cited_ids}")
+            else:
+                result["notes"].append("Citation grading not applicable")
             
             return result
         
         # For factoid and multi-hop questions
         cited_ids = self.extract_citations(generated_answer)
         
-        # Check citations
-        if ground_truth_chunk_ids:
+        # Check citations only for systems that are expected to cite retrieved evidence.
+        if require_citations and ground_truth_chunk_ids:
             citations_match = self.evaluate_citation_accuracy(cited_ids, ground_truth_chunk_ids)
             result["citations_accurate"] = citations_match
             
             if not citations_match and cited_ids:
                 result["notes"].append(f"Citations don't match. Expected from {ground_truth_chunk_ids}, got {cited_ids}")
+        elif not require_citations:
+            result["notes"].append("Citation grading not applicable")
         
         normalized_answer = self.normalize_text(generated_answer)
         required_answer_terms = required_answer_terms or [[ground_truth_answer]]
@@ -104,7 +119,8 @@ class EvaluationMetrics:
         
         correct = sum(1 for r in all_results if r["correct"])
         answerable_results = [r for r in all_results if r["question_type"] != "unanswerable"]
-        citations_accurate = sum(1 for r in answerable_results if r["citations_accurate"])
+        citation_results = [r for r in answerable_results if r.get("citations_accurate") is not None]
+        citations_accurate = sum(1 for r in citation_results if r["citations_accurate"])
         appropriate_idontknow = sum(1 for r in all_results if r["has_appropriate_idontknow"])
         
         unanswerable_count = sum(1 for r in all_results if r["question_type"] == "unanswerable")
@@ -117,7 +133,8 @@ class EvaluationMetrics:
             "total_questions": total,
             "correct_answers": correct,
             "accuracy": correct / total if total > 0 else 0,
-            "citation_accuracy": citations_accurate / len(answerable_results) if answerable_results else 0,
+            "citation_accuracy": citations_accurate / len(citation_results) if citation_results else None,
+            "citation_evaluable_questions": len(citation_results),
             "idontknow_accuracy": appropriate_idontknow / unanswerable_count if unanswerable_count > 0 else 0,
             "breakdown": {
                 "factoid": {"count": factoid_count, "correct": factoid_correct, "accuracy": factoid_correct / factoid_count if factoid_count else 0},

@@ -17,6 +17,25 @@ DATA_DIR = PROJECT_ROOT / "data" / "processed"
 EVAL_DIR = PROJECT_ROOT / "src" / "evaluation"
 RESULTS_FILE = PROJECT_ROOT / "evaluation_results.json"
 
+def format_optional_percentage(value):
+    """Format percentage metrics that may be inapplicable."""
+    return "N/A" if value is None else f"{value:.1%}"
+
+def print_evaluation_summary(label, stats):
+    """Print answer accuracy broken down by question type."""
+    factoid = stats["breakdown"]["factoid"]
+    multi_hop = stats["breakdown"]["multi_hop"]
+    unanswerable = stats["breakdown"]["unanswerable"]
+
+    print(f"\n{label}:")
+    print(f"  Overall Answer Accuracy: {stats['accuracy']:.1%} ({stats['correct_answers']}/{stats['total_questions']})")
+    print(f"  Factoid Answer Accuracy: {factoid['accuracy']:.1%} ({factoid['correct']}/{factoid['count']})")
+    if multi_hop["count"] > 0:
+        print(f"  Multi-hop Answer Accuracy: {multi_hop['accuracy']:.1%} ({multi_hop['correct']}/{multi_hop['count']})")
+    if unanswerable["count"] > 0:
+        print(f"  Abstention Accuracy: {stats['idontknow_accuracy']:.1%} ({unanswerable['correct']}/{unanswerable['count']})")
+    print(f"  Citation Accuracy (exact advisory IDs): {format_optional_percentage(stats['citation_accuracy'])}")
+
 def load_evaluation_set():
     """Load evaluation questions"""
     eval_file = EVAL_DIR / "evaluation_set.json"
@@ -151,19 +170,8 @@ def run_full_evaluation(bm25, dense, llm):
     bm25_stats = metrics.aggregate_results(bm25_results)
     dense_stats = metrics.aggregate_results(dense_results)
     
-    print(f"\nBM25 Results:")
-    print(f"  Accuracy: {bm25_stats['accuracy']:.1%} ({bm25_stats['correct_answers']}/{bm25_stats['total_questions']})")
-    print(f"  Factoid Accuracy: {bm25_stats['breakdown']['factoid']['accuracy']:.1%} ({bm25_stats['breakdown']['factoid']['correct']}/{bm25_stats['breakdown']['factoid']['count']})")
-    print(f"  Citation Accuracy: {bm25_stats['citation_accuracy']:.1%}")
-    if bm25_stats['breakdown']['unanswerable']['count'] > 0:
-        print(f"  'I don't know' Accuracy: {bm25_stats['idontknow_accuracy']:.1%}")
-    
-    print(f"\nDense Retrieval Results:")
-    print(f"  Accuracy: {dense_stats['accuracy']:.1%} ({dense_stats['correct_answers']}/{dense_stats['total_questions']})")
-    print(f"  Factoid Accuracy: {dense_stats['breakdown']['factoid']['accuracy']:.1%} ({dense_stats['breakdown']['factoid']['correct']}/{dense_stats['breakdown']['factoid']['count']})")
-    print(f"  Citation Accuracy: {dense_stats['citation_accuracy']:.1%}")
-    if dense_stats['breakdown']['unanswerable']['count'] > 0:
-        print(f"  'I don't know' Accuracy: {dense_stats['idontknow_accuracy']:.1%}")
+    print_evaluation_summary("BM25 Results", bm25_stats)
+    print_evaluation_summary("Dense Retrieval Results", dense_stats)
     
     # Comparison
     print(f"\nComparison:")

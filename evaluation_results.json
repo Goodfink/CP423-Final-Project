@@ -6,6 +6,7 @@
     "no_retrieval": {
       "answer": "The GitHub repository for the issue is https://github.com/dhowden/tag. The specific version that fixes the out-of-bounds read vulnerability is 0.13.2.",
       "correct": false,
+      "citations_accurate": null,
       "manual_correct": null
     },
     "bm25": {
@@ -34,6 +35,7 @@
     "no_retrieval": {
       "answer": "In vulnerable versions of lakeFS, authenticated users cannot perform unauthorized actions such as deleting files or directories without explicit permission from the user who owns them. This is because these operations require specific permissions that are not granted to authenticated users in newer versions of lakeFS.",
       "correct": false,
+      "citations_accurate": null,
       "manual_correct": null
     },
     "bm25": {
@@ -61,6 +63,7 @@
     "no_retrieval": {
       "answer": "Caddy v2.4 in CVE-2022-29718 is affected by a buffer overflow vulnerability.",
       "correct": false,
+      "citations_accurate": null,
       "manual_correct": null
     },
     "bm25": {
@@ -89,6 +92,7 @@
     "no_retrieval": {
       "answer": "The two Venice functions that are affected by the partial path traversal vulnerability are `http::path::match` and `http::path::replace`.",
       "correct": false,
+      "citations_accurate": null,
       "manual_correct": null
     },
     "bm25": {
@@ -115,6 +119,7 @@
     "no_retrieval": {
       "answer": "The Jenkins Nested View Plugin 1.20 and earlier versions may be vulnerable to SQL injection attacks. This is because the plugin uses a parameterized query for nested views, which can be exploited if the input data contains malicious SQL code. To mitigate this risk, it's recommended to use prepared statements or parameterized queries whenever possible.",
       "correct": false,
+      "citations_accurate": null,
       "manual_correct": null
     },
     "bm25": {
@@ -143,6 +148,7 @@
     "no_retrieval": {
       "answer": "Apache Tomcat's Denial of Service (DoS) attacks can be caused by various factors such as excessive network traffic, resource exhaustion, or vulnerabilities in the application code. The specific cause may vary depending on the version and configuration of the server. For example, if the server is running out of memory, it could lead to DoS attacks. Additionally, if there are security vulnerabilities in the application",
       "correct": false,
+      "citations_accurate": null,
       "manual_correct": null
     },
     "bm25": {
@@ -171,6 +177,7 @@
     "no_retrieval": {
       "answer": "The attack that allows local users to write arbitrary files in NumPy versions before 1.8.1 is called a \"buffer overflow\" or \"file descriptor injection.\" This vulnerability occurs when an attacker writes code that overwrites the file descriptor of a process with a large number of bytes, allowing them to execute arbitrary code on the system.",
       "correct": false,
+      "citations_accurate": null,
       "manual_correct": null
     },
     "bm25": {
@@ -198,6 +205,7 @@
     "no_retrieval": {
       "answer": "To remediate the remote code execution (RCE) vulnerability in Apache Airflow's Docker provider, you should ensure that the Docker image is properly signed and trusted. This involves using a trusted Docker registry or signing the Docker image with a valid certificate. Additionally, you should verify that the Docker client being used has the necessary permissions to access the Docker daemon and its services. It's also important to regularly",
       "correct": false,
+      "citations_accurate": null,
       "manual_correct": null
     },
     "bm25": {
@@ -227,6 +235,7 @@
     "no_retrieval": {
       "answer": "The shell affected by shescape's home-directory exposure vulnerability is the Bourne shell (sh).",
       "correct": false,
+      "citations_accurate": null,
       "manual_correct": null
     },
     "bm25": {
@@ -256,6 +265,7 @@
     "no_retrieval": {
       "answer": "The recommended workaround for the node-saml signature-bypass vulnerability is to use a certificate authority (CA) that supports SAML 2.0 and has a trusted root CA. This can help mitigate the issue by ensuring that the client's identity is verified against a trusted root CA.",
       "correct": false,
+      "citations_accurate": null,
       "manual_correct": null
     },
     "bm25": {

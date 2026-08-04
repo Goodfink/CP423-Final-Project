@@ -44,7 +44,8 @@ Answer:"""
         question_item["question_type"],
         [],
         question_item.get("required_answer_terms"),
-        question_item.get("forbidden_answer_terms")
+        question_item.get("forbidden_answer_terms"),
+        require_citations=False
     )
     saved_result = saved_results.get(question_item["question_id"], {})
     manual_correct = saved_result.get("no_retrieval", {}).get("manual_correct")
@@ -55,6 +56,7 @@ Answer:"""
         "no_retrieval": {
             "answer": result_text,
             "correct": evaluation["correct"],
+            "citations_accurate": evaluation["citations_accurate"],
             "manual_correct": manual_correct
         }
     })
